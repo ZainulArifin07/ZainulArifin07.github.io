@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(background.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.InputEmail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 80px 25px;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+}
+
+.user {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: calc(-90px/2);
+  left: calc(50% - 45px);
+}
+
+h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.InputEmail p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.InputEmail input {
+  width: 250px;
+  margin-bottom: 35px;
+}
+
+.InputEmail input [type = "text"],
+.InputEmail input [type = "password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.InputEmail input [type = "submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background: #ff267e;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.InputEmail input [type = "submit"]:hover {
+  background: #7FFFD4;
+  color: #7FFFD4;
+}
+
+.InputEmail a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tombolLogin input{
+  text-align: center;
+  height: 32px;
+  width: 75px;
+  margin-left: 70px;
+}
+
+.Register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px 190px;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 520px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+}
+
+h3 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: white;
+  text-align: center;
+}
+
+.Register input {
+  width: 330px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.Register select {
+  width: 135px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.tombolRegister input{
+  height: 32px;
+  width: 100px;
+  margin-left: 115px;
+}
+
