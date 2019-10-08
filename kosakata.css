@@ -125,3 +125,264 @@ h3 {
   margin-left: 115px;
 }
 
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+width: 80%;
+margin: auto;
+    background-image: url("pattern.jpg");
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+}
+
+.logo{
+float: left;
+cursor: pointer;
+}
+
+.logo2{
+float: right;
+}
+
+.nav{
+    margin: auto;
+    text-align: center;
+    font-family: fantasy;
+    width: 100%;
+    font-size: 20px;
+}
+.nav ul{
+    /*background: #7f8c8d;*/
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+    padding: 0 0px;
+}
+.nav ul li{
+    float: left;   
+}
+
+.Cara{
+  font-size: 28px;
+  font-family: sans-serif;
+}
+/*.content{
+  margin-bottom: 50px;
+}*/
+.nav ul li img{
+  margin-right: 100px;
+}
+.nav ul li:hover{
+    background: #16a085;
+    
+}
+.nav ul li:hover a{
+    color: snow;
+}
+.nav ul li a{
+    display: block;
+    padding: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+ .btn-default{
+    float: right;
+        /*ubah warna background*/
+        background-color: #7942ee;
+        /*ubah warna teks*/
+        color: white;
+        /*menghilangkan border*/
+        border: none;
+    /*atur sudut border*/
+        border-radius: 5px;
+        /*efek bayangan*/
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;
+        /*ubah jarak padding/dalam*/
+        padding: 10px 15px;
+        /*ubah tampilan kursor ketika berada diatas elemen*/
+        cursor: pointer;
+        font-family: fantasy;
+      }
+      .btn-default:hover{
+        /*ubah warna background ketika kursor berada diatas elemen*/
+        background-color: #6124e3;
+      }
+
+.PilihBahasa{
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #202020; 
+}
+
+      .Btn-Daerah{
+    /*atur sudut border*/
+        border-radius: 5px;
+        /*teks rata tengah*/
+        text-align: center;
+        /*ubah jarak margin/luar*/
+        margin: 5px 2px;       
+        }
+      .Btn-Daerah .btn-de{
+        color: white;
+        font-family: fantasy;
+        padding: 15px 60px;
+        background-color: #7942ee;
+        font-size: 14pt;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+.logo3{
+float: left;
+}
+
+.AyoB{
+  font-size: 28px;
+  font-family: sans-serif;
+  float: right;
+}
+.AyoBel{
+  color: white;
+        font-family: fantasy;
+        padding: 15px 60px;
+        background-color: #7942ee;
+        font-size: 14pt;
+        border-radius: 10px;
+        cursor: pointer;  
+}
+
+.kelasPrivate{
+  font-size: 15pt;
+  font-family: tahoma;
+  color : #00008B;
+}
+
+.footer {
+  position: absolute;
+  bottom: : 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: rgba(0,0,0, 0.7);
+}
+
+.footer p {
+  color: white;
+  font-family: verdana;
+  font-family: 12pt;
+}
+
+/* .cs{
+        color: #00BFFF;
+        font-family: times new roman;
+        font-size: 13pt;} */
+
+.footer h3 {
+        color: white;
+        font-family: arial;
+        font-size: 15pt;
+      }
+
+.footer table {
+  margin-top: 15px;
+}
+
+.footerTataCara {
+  position: absolute;
+  bottom: : 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: rgba(0,0,0, 0.7);
+}
+.ab{
+  width: 50%;
+  margin-top: 20px;
+}
+
+/* .ab .bahasa{
+  float: left;
+} */
+.ab .customer{
+  float: left;
+}
+
+.ab .bank{
+  float: right;
+}
+
+.footerTataCara p {
+  color: white;
+  font-family: verdana;
+  font-family: 12pt;
+}
+
+.abc h3 {
+  font-family: arial;
+          font-size: 13pt;
+          color: #000;
+          line-height: 1.5em;
+}
+.customer{
+  color: #ccc;
+}
+
+.tataCara{
+  font-size: 15pt;
+  font-family: tahoma;
+  color : #00008B;
+}
+
+.footerTentang   {
+  position: absolute;
+  bottom: : 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: rgba(0,0,0, 0.7);
+}
+
+.footerTentang p {
+  color: white;
+  font-family: verdana;
+  font-family: 12pt;
+}
+
+.tentang h1{
+  font-size: 25pt;
+  font-family: tahoma;
+  color : #00008B;
+  line-height: 1.5em;
+}
+
+.tentang p{
+  font-size: 15pt;
+  font-family: tahoma;
+  color : #6495ED;
+  line-height: 1.5em;
+}
+
+.footerHarga{
+  position: absolute;
+  bottom: : 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: rgba(0,0,0, 0.7);
+}
+
+.footerHarga p {
+  color: white;
+  font-family: verdana;
+  font-family: 12pt;
+}
