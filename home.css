@@ -19,7 +19,6 @@ cursor: pointer;
 .logo2{
 float: right;
 }
-
 .nav{
     margin: auto;
     text-align: center;
@@ -118,7 +117,6 @@ float: right;
 .logo3{
 float: left;
 }
-
 .AyoB{
 	font-size: 28px;
 	font-family: sans-serif;
@@ -134,7 +132,6 @@ float: left;
         cursor: pointer;	
 }
 
-<<<<<<< HEAD
 .UbahRegister {
   font-family: cursive;
   position: absolute;
@@ -167,13 +164,3 @@ float: left;
     margin-bottom: 5px;
     margin-left: 20px;
 }
-=======
-.kelasPrivate{
-  font-size: 15pt;
-  font-family: tahoma;
-  color : #00008B;
-}
-
-
-
->>>>>>> html+css 2
