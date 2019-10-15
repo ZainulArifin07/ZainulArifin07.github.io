@@ -302,3 +302,64 @@ article {padding: 6px 0 25px 25px}
     overflow: hidden;
     clear: both;
   }
+  /****/
+/* Materi */
+/****/
+.matr{
+  max-width:960px;
+  margin:30px auto;
+  padding:0 30px;
+}
+  .matr div {
+    background-color: #F7F7F7;
+    border: 1px solid #E2E2E2;
+    padding: 0 20px;
+    margin:15px 0;
+  }
+    .matr:hover {
+        background-color:#fafafa;
+    }
+    
+    .matr h3 span {
+      font-family: 'entypo';
+      font-size:19px;
+      position:absolute;
+      right:0;
+      transition:all .6s;
+    }
+      .matr.close {
+        -webkit-transform:rotate(180deg);
+        transition:all .5s;
+      }
+    
+    .matr p {
+      display:none;
+      margin-left:10px;
+      padding:0 15px;
+      border-left:1px solid #ccc;
+    }
+      /****/
+/* hasil latihan */
+/****/
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+  margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: center; 
+	font-size: 18px;
+	}
