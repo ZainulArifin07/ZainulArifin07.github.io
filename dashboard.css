@@ -1,0 +1,365 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  margin:0;
+  padding:0;
+  background-color:#f0f0f0;
+  font-family:Muli, sans-serif;
+  color:#444;
+}
+ul {
+  list-style:none;
+  margin-top:0;
+  padding:0;
+}
+a {
+  cursor:pointer;
+  display:block;
+  color:#b3b3b3;
+  text-decoration:none;
+}
+.bckg {
+  background-color:#383B42;
+  box-shadow:-4px 0px 10px rgba(14, 14, 14, 0.48) inset;
+  width:200px;
+  height:100%;
+  position:fixed;
+  left:0;
+  top:0;
+}
+h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #F6F6EF;
+    line-height:60px;
+    margin:0;
+    font-size:20px;
+    letter-spacing:2px;
+    background-color:#34363A;
+    border-bottom:1px solid rgba(101, 116, 134, 0.57);
+}
+h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #919191;
+  font-weight: normal;
+  padding-left: 40px;
+  line-height: 60px;
+  text-shadow: 1px 1px 2px #fff;
+  position: relative;
+  flex:1;
+  -webkit-flex:1;
+  -ms-flex:1;
+  }
+  h2:before {
+    content:'';
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    left: -19px;
+    top: 12px;
+    background-color:#34363A;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    transform:rotate(45deg);
+  }
+
+h3 {
+  font-size:17px;
+  margin:0;
+  line-height: 40px;
+  color: #555;
+  cursor:pointer;
+  position:relative;
+}
+
+.left_nav {
+  width:200px;
+  height:100%;
+  float:left;
+  position:relative;
+  z-index:99;
+  }
+  .left_nav nav ul li {
+    border-bottom:1px solid #42454D;
+    padding-left:48px;
+    transition:all 0.6s;
+    border-top:1px solid #2E3036;
+      }
+      nav ul li:hover {
+        background-color: #454952;
+        transition: all 0.6s;
+        border-bottom: 1px solid #797979;
+      }
+      
+       nav ul li:hover a {
+        color:#fff;
+        transition:all 0.6s;
+      }
+      
+       nav ul li a {
+        line-height:55px;
+        font-size:18px;
+        position:relative;
+        letter-spacing:1px;
+        transition:all 0.6s;
+      }
+         nav ul li:before {
+          font-family: 'entypo', sans-serif;
+          font-size:20px;
+          position:absolute;
+          left:-32px;
+        }
+      
+/*    
+      nav ul li:first-child a:before {content:"\1f4c5";}
+      nav ul li:nth-child(2) a:before {content:"\1f465";}
+      nav ul li:nth-child(3) a:before {content:"\1f4c5";}
+      nav ul li:nth-child(4) a:before {content:"\e771";}*/
+
+
+main {
+  flex:1;
+  -webkit-flex:1;
+  -ms-flex:1;
+}
+.title {
+  background-color: #fff;
+  border-bottom: 1px solid #C0C1C0;
+  height:60px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+  }
+  .title a {
+    color: #AAA;
+    width: auto;
+    margin: 0 20px;
+    float: right;
+    line-height: 62px;
+    position:relative;
+    text-decoration:none;
+    transition:all .5s;
+    }
+    .title:before {
+      content:"\1f464";
+      font-size: 38px;
+      position:absolute;
+      left:-50px;
+      font-family: 'entypo';
+    }
+  
+
+
+a:hover {
+  color:#33526B;
+  transition:all .5s;
+}
+
+.larg {
+  max-width:960px;
+  margin:30px auto;
+  padding:0 30px;
+ } 
+  .larg div {
+    background-color: #F7F7F7;
+    border: 1px solid #E2E2E2;
+    padding: 0 20px;
+    margin:15px 0;
+}
+    .larg:hover {
+        background-color:#fafafa;
+    }
+    
+   .larg h3 span {
+      font-family: 'entypo';
+      font-size:19px;
+      position:absolute;
+      right:0;
+      transition:all .6s;
+    }
+     h3 span .close {
+        -webkit-transform:rotate(180deg);
+        transition:all .5s;
+      }
+    
+    
+    h3 span p {
+      display:none;
+      margin-left:10px;
+      padding:0 15px;
+      border-left:1px solid #ccc;
+    }
+  
+/****/
+/* Calendar */
+/****/
+section.mounth {
+  overflow: hidden;
+  display: block;
+  float: left;
+  width: 400px; height: auto;
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.25);
+  border-radius: 5px;
+}
+    .padg{
+      color: white;
+      font-size: 30px;
+    }
+    .calender {
+    position: relative;
+    display: block;
+    height: 80px;
+    background: #e9eaf0;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.06);
+  }
+    .calender h1 {
+      line-height: 80px;
+    }
+    .calender nav {
+      position: absolute;
+      display: block;
+      right: 30px; top: 18px;
+    }
+      .calender nav span {
+        display: block;
+        float: left;
+        width: 11px; height: 20px;
+        margin-left: 30px;
+        cursor: pointer;
+      }
+        .calender nav span:first-of-type {
+          background-position: -77px -4px;
+        }
+          .calender nav span:first-of-type:hover {
+            background-position: -106px -4px;
+          }
+        .calender nav span:last-of-type {
+          background-position: -90px -4px;
+        }
+          .calender nav span:last-of-type:hover {
+            background-position: -119px -4px;
+          }
+
+article {padding: 6px 0 25px 25px}
+  article b,
+  article span {
+    display: block;
+    float: left;
+    width: 45px; height: 45px;
+    margin: 4px;
+    text-align: center;
+  }
+  article b {
+    font: 600 16px/45px 'Open Sans';
+    color: #91d9ff;
+  }
+  article span {
+    font: 300 19px/45px 'Open Sans';
+    color: #4c5373;
+    box-shadow: inset 0 0 1px 1px #d9dce5;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  article span.disable {
+    color: #b6bacc;
+    box-shadow: inset 0 0 1px 1px #f3f4f7;
+  }
+    article span:not(.disable):hover {
+      background: #cdd0dd;
+      box-shadow:
+        inset 0 0 1px 1px #d9dce5,
+        0 1px 3px -1px #cdd0dd;
+    }
+    article span:not(.disable):active {
+      background: #b9becf;
+      box-shadow:
+        inset 0 1px 2px rgba(0,0,0,.18),
+        0 0 0 #cdd0dd;
+    }
+    article span.active,
+    article span.active:hover,
+    article span.active:active {
+      color: #fff;
+      box-shadow:
+        inset 0 0 1px 1px #ff8263,
+        0 1px 3px -1px #ff8263;
+      background: #ff8263;
+    }
+  article div {
+    display: block;
+    overflow: hidden;
+    clear: both;
+  }
+  /****/
+/* Materi */
+/****/
+.matr{
+  max-width:960px;
+  margin:30px auto;
+  padding:0 30px;
+}
+  .matr div {
+    background-color: #F7F7F7;
+    border: 1px solid #E2E2E2;
+    padding: 0 20px;
+    margin:15px 0;
+  }
+    .matr:hover {
+        background-color:#fafafa;
+    }
+    
+    .matr h3 span {
+      font-family: 'entypo';
+      font-size:19px;
+      position:absolute;
+      right:0;
+      transition:all .6s;
+    }
+      .matr.close {
+        -webkit-transform:rotate(180deg);
+        transition:all .5s;
+      }
+    
+    .matr p {
+      display:none;
+      margin-left:10px;
+      padding:0 15px;
+      border-left:1px solid #ccc;
+    }
+      /****/
+/* hasil latihan */
+/****/
+table { 
+	width: 750px; 
+	border-collapse: collapse; 
+  margin:50px auto;
+	}
+
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+	background: #eee; 
+	}
+th { 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+	}
+
+td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: center; 
+	font-size: 18px;
+	}
