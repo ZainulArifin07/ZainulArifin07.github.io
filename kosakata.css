@@ -1,381 +1,406 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
-  background: url(background.jpg);
+  background: url("Gambar/pattern.jpg");
   background-size: cover;
   font-family: sans-serif;
-}
+  }*/
+  body{
+    /*width: 80%;*/
+    margin: auto;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    /*background-repeat: no-repeat;*/
+  }
 
-.InputEmail {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 80px 25px;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 400px;
-  box-sizing: border-box;
-  background: rgba(0,0,0,.5);
-}
+  .InputEmail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 80px 25px;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+  }
 
-.user {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  top: calc(-90px/2);
-  left: calc(50% - 45px);
-}
+  .user {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-90px/2);
+    left: calc(50% - 45px);
+  }
 
-h2 {
-  margin: 0;
-  padding: 0 0 20px;
-  color: white;
-  text-align: center;
-}
+  h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
+  }
 
-.InputEmail p {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  color: #fff;
-}
+  .InputEmail p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+  }
 
-.InputEmail input {
-  width: 250px;
-  margin-bottom: 35px;
-}
+  .InputEmail input {
+    width: 250px;
+    margin-bottom: 35px;
+    border: 2px solid grey;
+    border-radius: 10px;
+  }
 
-.InputEmail input [type = "text"],
-.InputEmail input [type = "password"] {
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: #fff;
-  font-size: 15px;
-}
+  .InputEmail input [type = "text"],
+  .InputEmail input [type = "password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 15px;
+  }
 
-.InputEmail input [type = "submit"] {
-  border: none;
-  outline: none;
-  height: 40px;
-  color: #fff;
-  font-size: 16px;
-  background: #ff267e;
-  cursor: pointer;
-  border-radius: 20px;
-}
+  .InputEmail input [type = "submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #ff267e;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid grey;
+  }
 
-.InputEmail input [type = "submit"]:hover {
-  background: #7FFFD4;
-  color: #7FFFD4;
-}
+  .InputEmail input [type = "submit"]:hover {
+    background: #7FFFD4;
+    color: #7FFFD4;
+  }
 
-.InputEmail a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-}
+  .InputEmail a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-.tombolLogin input{
-  text-align: center;
-  height: 32px;
-  width: 75px;
-  margin-left: 70px;
-}
+  .tombolLogin input{
+    text-align: center;
+    height: 32px;
+    width: 75px;
+    margin-left: 70px;
+    border-radius: 0px;
+  }
 
-.Register {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 10px 190px;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 520px;
-  box-sizing: border-box;
-  background: rgba(0,0,0,.5);
-}
+  .Register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px 80px;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+  }
 
-h3 {
-  margin: 0;
-  padding: 0 0 20px;
-  color: white;
-  text-align: center;
-}
+  h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30pt;
+  }
 
-.Register input {
-  width: 330px;
-  height: 32px;
-  margin-bottom: 5px;
-}
+  .Register input {
+    width: 330px;
+    height: 32px;
+    margin-bottom: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+  }
 
-.Register select {
-  width: 135px;
-  height: 32px;
-  margin-bottom: 5px;
-}
+  .Register select {
+    width: 135px;
+    height: 32px;
+    margin-bottom: 5px;
+  }
 
-.tombolRegister input{
-  height: 32px;
-  width: 100px;
-  margin-left: 115px;
-}
+  .tombolRegister input{
+    height: 32px;
+    width: 100px;
+    margin-left: 105px;
+  }
 
-*{
+  *{
     margin: 0;
     padding: 0;  
-}
+  }
 
-body{
-width: 80%;
-margin: auto;
+  body{
+    width: 80%;
+    margin: auto;
     background-image: url("pattern.jpg");
     background-size: cover;
     /*background-repeat: no-repeat;*/
-}
+  }
 
-.logo{
-float: left;
-cursor: pointer;
-}
+  .logo{
+    float: left;
+    cursor: pointer;
+  }
 
-.logo2{
-float: right;
-}
+  .logo2{
+    float: right;
+  }
 
-.nav{
+  .nav{
     margin: auto;
     text-align: center;
     font-family: fantasy;
     width: 100%;
     font-size: 20px;
-}
-.nav ul{
+  }
+  .nav ul{
     /*background: #7f8c8d;*/
     list-style: none;
     position: relative;
     display: inline-table;
     width: 100%;
     padding: 0 0px;
-}
-.nav ul li{
+  }
+  .nav ul li{
     float: left;   
-}
+  }
 
-.Cara{
-  font-size: 28px;
-  font-family: sans-serif;
-}
+  .Cara{
+    font-size: 28px;
+    font-family: sans-serif;
+  }
 /*.content{
   margin-bottom: 50px;
-}*/
-.nav ul li img{
-  margin-right: 100px;
-}
-.nav ul li:hover{
+  }*/
+  .nav ul li img{
+    margin-right: 100px;
+  }
+  .nav ul li:hover{
     background: #16a085;
     
-}
-.nav ul li:hover a{
+  }
+  .nav ul li:hover a{
     color: snow;
-}
-.nav ul li a{
+  }
+  .nav ul li a{
     display: block;
     padding: 20px;
     color: #555;
     text-decoration: none;
-}
+  }
 
- .btn-default{
+  .btn-default{
     float: right;
-        /*ubah warna background*/
-        background-color: #7942ee;
-        /*ubah warna teks*/
-        color: white;
-        /*menghilangkan border*/
-        border: none;
+    /*ubah warna background*/
+    background-color: #7942ee;
+    /*ubah warna teks*/
+    color: white;
+    /*menghilangkan border*/
+    border: none;
     /*atur sudut border*/
-        border-radius: 5px;
-        /*efek bayangan*/
-        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
-        /*teks rata tengah*/
-        text-align: center;
-        /*ubah jarak margin/luar*/
-        margin: 5px 2px;
-        /*ubah jarak padding/dalam*/
-        padding: 10px 15px;
-        /*ubah tampilan kursor ketika berada diatas elemen*/
-        cursor: pointer;
-        font-family: fantasy;
-      }
-      .btn-default:hover{
-        /*ubah warna background ketika kursor berada diatas elemen*/
-        background-color: #6124e3;
-      }
+    border-radius: 5px;
+    /*efek bayangan*/
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    /*teks rata tengah*/
+    text-align: center;
+    /*ubah jarak margin/luar*/
+    margin: 5px 2px;
+    /*ubah jarak padding/dalam*/
+    padding: 10px 15px;
+    /*ubah tampilan kursor ketika berada diatas elemen*/
+    cursor: pointer;
+    font-family: fantasy;
+  }
+  .btn-default:hover{
+    /*ubah warna background ketika kursor berada diatas elemen*/
+    background-color: #6124e3;
+  }
 
-.PilihBahasa{
-  font-size: 12px;
-  font-family: sans-serif;
-  text-align: center;
-  color: #202020; 
-}
+  .PilihBahasa{
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #202020; 
+  }
 
-      .Btn-Daerah{
+  .Btn-Daerah{
     /*atur sudut border*/
-        border-radius: 5px;
-        /*teks rata tengah*/
-        text-align: center;
-        /*ubah jarak margin/luar*/
-        margin: 5px 2px;       
-        }
-      .Btn-Daerah .btn-de{
-        color: white;
-        font-family: fantasy;
-        padding: 15px 60px;
-        background-color: #7942ee;
-        font-size: 14pt;
-        border-radius: 10px;
-        cursor: pointer;
-      }
+    border-radius: 5px;
+    /*teks rata tengah*/
+    text-align: center;
+    /*ubah jarak margin/luar*/
+    margin: 5px 2px;       
+  }
+  .Btn-Daerah .btn-de{
+    color: white;
+    font-family: fantasy;
+    padding: 15px 60px;
+    background-color: #7942ee;
+    font-size: 14pt;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 
-.logo3{
-float: left;
-}
+  .logo3{
+    float: left;
+  }
 
-.AyoB{
-  font-size: 28px;
-  font-family: sans-serif;
-  float: right;
-}
-.AyoBel{
-  color: white;
-        font-family: fantasy;
-        padding: 15px 60px;
-        background-color: #7942ee;
-        font-size: 14pt;
-        border-radius: 10px;
-        cursor: pointer;  
-}
+  .AyoB{
+    font-size: 28px;
+    font-family: sans-serif;
+    float: right;
+  }
+  .AyoBel{
+    color: white;
+    font-family: fantasy;
+    padding: 15px 60px;
+    background-color: #7942ee;
+    font-size: 14pt;
+    border-radius: 10px;
+    cursor: pointer;  
+  }
 
-.kelasPrivate{
-  font-size: 15pt;
-  font-family: tahoma;
-  color : #00008B;
-}
+  .kelasPrivate{
+    font-size: 14pt;
+    font-family: "Comic Sans MS";
+    color : #008080;
+  }
 
-.footer {
-  position: absolute;
-  bottom: : 0%;
-  left: 0%;
-  width: 100%;
-  height: 45%;
-  background: rgba(0,0,0, 0.7);
-}
+  .footer {
+    position: absolute;
+    bottom: : 0%;
+    left: 0%;
+    width: 100%;
+    height: 30%;
+    background: rgba(0,0,0, 0.7);
+  }
 
-.footer p {
-  color: white;
-  font-family: verdana;
-  font-family: 12pt;
-}
+  .kosakata {
+    float: none;
+    margin: 0px 0 20px 0;
+    padding: 0px;
+  }
 
-/* .cs{
+  .cs {
+    float: none;
+    margin: 0px 0 20px 0;
+  }
+
+  .footer p {
+    color: white;
+    font-family: cambria;
+    font-family: 15pt;
+  }
+
+  .aaa {
+    color: ;
+    font-family: cambria;
+    font-family: 12pt;
+  }
+
+  /*.aaa p {
+    color: white;
+    font-family: cambria;
+    font-family: 20pt;
+  }*/
+
+  .footer td {
+    color: white;
+    font-family: cambria;
+    font-family: 12pt;
+  }
+
+ /*.cs{
         color: #00BFFF;
         font-family: times new roman;
-        font-size: 13pt;} */
+        font-size: 13pt;} 
 
-.footer h3 {
-        color: white;
-        font-family: arial;
-        font-size: 15pt;
-      }
+        .footer h3 {
+          color: white;
+          font-family: arial;
+          font-size: 15pt;
+        }
 
-.footer table {
-  margin-top: 15px;
-}
+        .footer table {
+          margin-top: 15px;
+        }
 
-.footerTataCara {
-  position: absolute;
-  bottom: : 0%;
-  left: 0%;
-  width: 100%;
-  height: 45%;
-  background: rgba(0,0,0, 0.7);
-}
-.ab{
-  width: 50%;
-  margin-top: 20px;
-}
+        .footerTataCara {
+          position: absolute;
+          bottom: : 0%;
+          left: 0%;
+          width: 100%;
+          height: 45%;
+          background: rgba(0,0,0, 0.7);
+        }
+        .ab{
+          width: 50%;
+          margin-top: 20px;
+        }
 
-/* .ab .bahasa{
-  float: left;
-} */
+        .footerTataCara p {
+          color: white;
+          font-family: verdana;
+          font-family: 12pt;
+        }
 
-.footerTataCara p {
-  color: white;
-  font-family: verdana;
-  font-family: 12pt;
-}
-
-.abc h3 {
-  font-family: arial;
+        .abc h3 {
+          font-family: arial;
           font-size: 13pt;
           color: #000;
           line-height: 1.5em;
-}
-.customer{
-  color: #ccc;
-}
+        }
+        .customer{
+          color: #ccc;
+        }*/
 
-.tataCara{
-  font-size: 15pt;
-  font-family: tahoma;
-  color : #00008B;
-}
+        .tataCara{
+          font-size: 14pt;
+          font-family: "Comic Sans MS";
+          color : #008080;
+        }
 
-.footerTentang   {
-  position: absolute;
-  bottom: : 0%;
-  left: 0%;
-  width: 100%;
-  height: 45%;
-  background: rgba(0,0,0, 0.7);
-}
+        .abc h3{
+            font-family: "Comic Sans MS";
+            font-size: 15pt;
+            color: #008080;
+            line-height: 1.5em;
+          }
 
-.footerTentang p {
-  color: white;
-  font-family: verdana;
-  font-family: 12pt;
-}
+        .abc td {
+            font-family: "Comic Sans MS";
+            font-size: 12pt;
+            color: #008080;
+            line-height: 1.3em;
+          }
 
-.tentang h1{
-  font-size: 25pt;
-  font-family: tahoma;
-  color : #00008B;
-  line-height: 1.5em;
-}
+        .tentang h1{
+          font-family: "Comic Sans MS";
+          font-size: 20pt;
+          color: #008080;
+          line-height: 1.5em;
+        }
 
-.tentang p{
-  font-size: 15pt;
-  font-family: tahoma;
-  color : #6495ED;
-  line-height: 1.5em;
-}
-
-.footerHarga{
-  position: absolute;
-  bottom: : 0%;
-  left: 0%;
-  width: 100%;
-  height: 45%;
-  background: rgba(0,0,0, 0.7);
-}
-
-.footerHarga p {
-  color: white;
-  font-family: verdana;
-  font-family: 12pt;
-}
+        .tentang p{
+          font-family: "Calibri";
+          font-size: 15pt;
+          color: #008080;
+          line-height: 1.5em;
+        }

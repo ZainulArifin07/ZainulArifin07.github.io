@@ -3,31 +3,55 @@
 <head>
 	<title>Login-KOSAKATA</title>
 	<link rel="stylesheet" type="text/css" href="kosakata.css">
-	<link rel="shortcut icon" href="icon2.png">
+	<link rel="shortcut icon" href="Gambar/icon2.png">
 </head>
 <body>
 	<style type="text/css">
 		body {
 			margin: 0;
-  			padding: 0;
-  			background: url(background--.jpg);
-  			background-size: cover;
-  			font-family: sans-serif;
+			padding: 0;
+			background: url(Gambar/background--.jpg);
+			background-size: cover;
+			font-family: sans-serif;
 		}
 	</style>
 	<div class="InputEmail">
-		<img src="user.png" class="user">
+		<img src="Gambar/user.png" class="user">
 		<h2>LOGIN</h2>
 		<form>
 			<p>Email</p>
-			<input type="text" name="Email" placeholder="Masukkan Email" style="height: 30px">
+			<input type="email" name="Email" id="email" placeholder="Masukkan Email" style="height: 30px">
 			<p>Password</p>
-
-			<input type="password" name="Password" placeholder="Masukkan Password" style="height: 30px">
+			<input type="password" name="Password" id="password" placeholder="Masukkan Password" style="height: 30px">
 			<div class="tombolLogin">
-				<button type="Submit" name="Login" value="Sign in" >Login</button>
+				<input type="submit" name="" value="LOGIN" onclick="returnValidation()">
+				<!-- <button type="Submit" name="Login" onclick="returnValidation()" value="Sign in">Login</button> -->
 			</div>
 		</form>
 	</div>
+
+	<script type="text/javascript">
+		function returnValidation(){
+			var email = document.getElementById("email").value;
+			var password = document.getElementById("password").value;
+
+			console.log(email);
+
+			if(email =="" && password ==""){
+				alert ("Data tidak boleh kosong") ;
+				return false;
+			}
+			else if(email !="" && password !=""){
+				alert ("Anda berhasil masuk") ;
+				window.location.href = "dashboard.html";
+
+			}
+			else{
+				alert ("Data tidak boleh kosong") ;
+				return false;
+			}
+		}
+		
+	</script>
 </body>
 </html>

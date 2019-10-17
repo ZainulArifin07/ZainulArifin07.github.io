@@ -3,40 +3,64 @@
 <head>
 	<title>Daftar-KOSAKATA</title>
 	<link rel="stylesheet" type="text/css" href="kosakata.css">
-	<link rel="shortcut icon" href="icon2.png">
-	<!-- <style type="text/css">
-		body {
-			background: url(3175.jpg);
-		}
-	</style> -->
+	<link rel="shortcut icon" href="Gambar/icon2.png">
 </head>
 <body>
 	<style type="text/css">
 		body {
 			margin: 0;
-  			padding: 0;
-  			background: url(background--.jpg);
-  			background-size: cover;
-  			font-family: sans-serif;
+			padding: 0;
+			background: url(Gambar/background--.jpg);
+			background-size: cover;
+			font-family: sans-serif;
 		}
 	</style>
-	<div class="Register">
+	<div class="Register">																							
 		<h3>DAFTAR</h3>
-		<form class="form-horizontal" role="form">
-			<p><input class="form-control" type="text" name="Email" placeholder="Email"></p>
-			<p><input class="form-control" type="password" name="Password" placeholder="Password"></p>
-			<p><input class="form-control" type="text" name="Nama" placeholder="Nama Pendaftar"></p>
-			<p><input class="form-control" type="text" name="alamat" placeholder="Alamat"></p>
-			<p><input class="form-control" type="text" name="pekerjaan" placeholder="Pekerjaan"></p>
-			<p><input class="form-control" type="text" name="noHp" placeholder="Nomor HP"></p>
+		<form class="form-horizontal" action="#!" role="form">
+			<p><input class="form-control" type="text" id="email" name="Email" placeholder="Email"></p>
+			<p><input class="form-control" type="password" id="password" name="Password" placeholder="Password"></p>
+			<p><input class="form-control" type="text" id="namapendaftar" name="Nama" placeholder="Nama Pendaftar"></p>
+			<p><input class="form-control" type="text" id="alamat" name="alamat" placeholder="Alamat"></p>
+			<p><input class="form-control" type="text" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"></p>
+			<p><input class="form-control" type="text" id="noHp" name="noHp" placeholder="Nomor HP"></p>
 			<p><select name="jenis_kelamin">
 				<option class="radiobutton" value="Laki-Laki">Laki-Laki</option>
 				<option value="Perempuan">Perempuan</option>
-			</select></p>
+			</select></p><br>
 			<div class="tombolRegister">
-				<button type="submit" >Register</button>
+				<input type="submit" name="" value="Register" onclick="location.href='awal.html'">
 			</div>
 		</form>
 	</div>
+
+	<script type="text/javascript">
+		function returnValidation(){
+			var email = document.getElementById("email").value;
+			var password = document.getElementById("password").value;
+			var namapendaftar = document.getElementsById("namapendaftar").value;
+			var alamat = document.getElementsById("alamat").value;
+			var pekerjaan = document.getElementsById("pekerjaan").value;
+			var noHp = document.getElementsById("noHp").value;
+
+			console.log(email);
+
+			if(email == "" && password == "" && namapendaftar == "" && alamat == "" && pekerjaan == "" && noHp == ""){
+				alert ("Data tidak boleh kosong") ;
+				return false;
+			}
+			else if(email != "" && password != "" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != ""){
+				alert ("Data berhasil diisi!!") ;
+				window.location.href = "awal.html";
+
+			}
+			else{
+				alert ("Data tidak boleh kosong") ;
+				return false;
+			}
+		}
+
+	</script>
 </body>
 </html>
+<!-- onclick="location.href='awal.html'" -->
