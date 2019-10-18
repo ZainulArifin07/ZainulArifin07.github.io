@@ -108,6 +108,7 @@ body{
  margin: 5px 2px;       
 }
 .Btn-Daerah .btn-de{
+  position: relative;
   color: white;
   font-family: fantasy;
   padding: 15px 60px;

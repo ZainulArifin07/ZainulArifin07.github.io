@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" type="text/css" href="panel.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="responsive_toggle_btn">
+            <a id="menu_toggle_btn" href="#"></a>
+        </div>
+        <nav class="menu">
+            <div>
+                <h1>Admin</h1>
+            </div>
+            <ul>
+                <li><a href="admin_panel.html"><span>Upload Materi</span></a></li>
+                <li><a href="admin_Materi.html" class="el-a"><span>Daftar Materi</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hidder"></div>
+    <div class="content_area">
+        <section>
+            <article>
+                <div class="article_content">
+                    <form class="form">
+                        <h4>Nama Materi :</h4><input type="text" placeholder="Nama Materi" class="textbox"/><br>
+                        <h4>Isi Materi :</h4>
+                        <textarea name="isi_materi" id="isi_materi" cols="60" rows="5" placeholder="Isi Materi"></textarea>
+                        <h4>Upload Materi</h4>
+                        <button><input type="file" name="upload" class="upload"></button><br>
+                        <h4>Upload Soal Latihan</h4>
+                        <button><input type="file" name="upload" class="upload"></button><br><br><br>
+                        <input type="button" value="upload" class="button">
+                </form>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="panel.js"></script>
+</body>
+</html>
