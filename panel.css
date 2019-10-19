@@ -1,5 +1,8 @@
 body{
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: muli;
+    text-align: center;
+    color: white;
+    background-color: ghostwhite;
 }
 
 .sidebar{
@@ -9,7 +12,7 @@ body{
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #fff;
+    background-color: #383B42;
 }
 
 .sidebar .responsive_toggle_btn{
@@ -17,7 +20,6 @@ body{
 }
 .sidebar .menu{
     padding: 10px;
-    border: solid 1px #ccc;
 }
 
 .sidebar .menu ul{
@@ -47,6 +49,7 @@ body{
     position: relative;
     z-index: 1000;
     transition: all .15s ease-in-out;
+    color: white;
 }
 
 .sidebar .menu ul li a:after{
@@ -99,7 +102,7 @@ body{
 
 .hidder{
     position: absolute;
-    width: 100%;
+    width: 130%;
     height: 100%;
     background-color: rgba(0,0,0,.8);
     left: 0;
@@ -118,7 +121,7 @@ body{
 
 @media screen and (max-width: 1024px){
     .sidebar{
-        background-color: #fff;
+        background-color: #383B42;
         transform: translateX(-150px);
         transition: all .3s ease-in-out;
         z-index: 999;
@@ -141,11 +144,11 @@ body{
         height: 50px;
     }
     .sidebar .responsive_toggle_btn a{
-        background-color: #bada55;
-        height: 100%;
+        background-color: whitesmoke;
+        height: 80%;
         display: block;
         z-index: 3000;
-        border-left: solid 3px #869E39;
+        border-left: solid 3px white;
     }
     .sidebar .menu{
         transform: translateX(-50px);
@@ -191,6 +194,9 @@ section.mounth {
   }
   .calender h1 {
     line-height: 80px;
+    background-color: #34363A;
+    color: white;
+    margin: 0;
   }
   .calender nav {
     position: absolute;
@@ -217,7 +223,12 @@ section.mounth {
     background-position: -119px -4px;
   }
   
-  article {padding: 6px 0 25px 25px}
+  article {
+    padding: 6px 0 25px 25px;
+    color: black;
+    text-align: left;
+    border: solid 5px #ccc;
+  }
   article b,
   article span {
     display: block;
@@ -226,6 +237,7 @@ section.mounth {
     margin: 4px;
     text-align: center;
   }
+
   article b {
     font: 600 16px/45px 'Open Sans';
     color: #91d9ff;
@@ -275,6 +287,7 @@ section.mounth {
         border-collapse: collapse; 
         margin:50px auto;
         margin-left: 0px;
+        color: black;
       }
  
       /* Zebra striping */
