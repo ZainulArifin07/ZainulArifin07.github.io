@@ -6,7 +6,7 @@
 body{
   width: 100%;
   margin: auto;
-  background-image: url("Gambar/pattern.jpg");
+  background-image: url("Gambar/pattern1.jpg");
   background-size: cover;
   /*background-repeat: no-repeat;*/
 }
@@ -216,11 +216,11 @@ body{
 ::selection {
   background: rgba(0,0,0,.05);
 }
-body {
+/*body {
   padding: 0px;
   background: #d2d5e0;
   font-family: 'Open Sans', sans-serif;
-}
+}*/
 ul, h1, h2, h3, h4 {
   margin: 0; padding: 0;
   list-style: none;
