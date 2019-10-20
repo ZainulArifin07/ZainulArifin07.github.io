@@ -1,14 +1,8 @@
-/*body {
-  margin: 0;
-  padding: 0;
-  background: url("Gambar/pattern.jpg");
-  background-size: cover;
-  font-family: sans-serif;
-  }*/
+
   body{
     width: 100%;
     margin: auto;
-    background-image: url("/Gambar/pattern.jpg");
+    background-image: url("Gambar/pattern1.jpg");
     background-size: cover;
     background-attachment: fixed;
     /*background-repeat: no-repeat;*/
@@ -144,14 +138,6 @@
   *{
     margin: 0;
     padding: 0;  
-  }
-
-  body{
-    width: 100%;
-    margin: auto;
-    background-image: url("pattern.jpg");
-    background-size: cover;
-    /*background-repeat: no-repeat;*/
   }
   .rere{
     width: 80%;
@@ -360,4 +346,5 @@
           font-size: 15pt;
           color: #008080;
           line-height: 1.5em;
+          text-align: center;
         }
