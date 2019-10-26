@@ -123,7 +123,6 @@ main {
   -webkit-flex:1;
   -ms-flex:1;
 }
-
 .title {
   background-color: #fff;
   border-bottom: 1px solid #C0C1C0;
@@ -195,7 +194,6 @@ main {
         background-color: #3e8e41;
       }
 
-
 a:hover {
   color:#33526B;
   transition:all .5s;
@@ -242,59 +240,6 @@ a:hover {
         -webkit-transform:rotate(180deg);
         transition:all .5s;
     }
-
-    /* calender */
-    section.mounth {
-        overflow: hidden;
-        display: block;
-        float: left;
-        width: 410px; height: auto;
-        background: #fff;
-        box-shadow: 0 1px 1px rgba(0,0,0,.25);
-        border-radius: 5px;
-      }
-      .padg{
-        color: white;
-        font-size: 20px;
-      }
-      .calender {
-        position: relative;
-        display: block;
-        height: 80px;
-        background: #e9eaf0;
-        box-shadow: inset 0 -1px 0 rgba(0,0,0,.06);
-      }
-      .calender h1 {
-        line-height: 80px;
-        width: 420px;
-        background-color: #34363A;
-        color: white;
-        margin: 0;
-      }
-      .calender nav {
-        position: absolute;
-        display: block;
-        right: 30px; top: 18px;
-      }
-      .calender nav span {
-        display: block;
-        float: left;
-        width: 11px; height: 20px;
-        margin-left: 30px;
-        cursor: pointer;
-      }
-      .calender nav span:first-of-type {
-        background-position: -77px -4px;
-      }
-      .calender nav span:first-of-type:hover {
-        background-position: -106px -4px;
-      }
-      .calender nav span:last-of-type {
-        background-position: -90px -4px;
-      }
-      .calender nav span:last-of-type:hover {
-        background-position: -119px -4px;
-      }
       
       article {
         color: black;
@@ -302,11 +247,12 @@ a:hover {
       }
       article b,
       article span {
-        display: block;
         float: left;
         width: 45px; height: 45px;
         margin: 4px;
         text-align: center;
+        margin-top: 0;
+        margin-right: -15px;
       }
     
       article b {
@@ -383,7 +329,7 @@ a:hover {
         background: #eee; 
       }
       th { 
-        background: #34363A; 
+        background: #3498db; 
         color: white; 
         font-weight: bold; 
       }
