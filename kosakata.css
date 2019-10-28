@@ -1,180 +1,206 @@
 
-  body{
-    width: 100%;
-    margin: auto;
-    background-image: url("Gambar/pattern1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    /*background-repeat: no-repeat;*/
-  }
+body{
+  width: 100%;
+  margin: auto;
+  background-image: url("Gambar/pattern1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-repeat: no-repeat;*/
+}
 
-  .InputEmail {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 80px 25px;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 400px;
-    box-sizing: border-box;
-    background: rgba(0,0,0,.5);
-  }
+.InputEmail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 80px 25px;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+}
 
-  .user {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: absolute;
-    top: calc(-90px/2);
-    left: calc(50% - 45px);
-  }
+.user {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: calc(-90px/2);
+  left: calc(50% - 45px);
+}
 
-  h2 {
-    margin: 0;
-    padding: 0 0 20px;
-    color: white;
-    text-align: center;
-  }
+h2 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: white;
+  text-align: center;
+}
 
-  .InputEmail p {
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    color: #fff;
-  }
+.InputEmail p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
 
-  .InputEmail input {
-    width: 250px;
-    margin-bottom: 35px;
-    border: 2px solid grey;
-    border-radius: 10px;
-  }
+.InputEmail input {
+  width: 250px;
+  margin-bottom: 35px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
 
-  .InputEmail input [type = "text"],
-  .InputEmail input [type = "password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 15px;
-  }
+.InputEmail input [type = "text"],
+.InputEmail input [type = "password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+}
 
-  .InputEmail input [type = "submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-    background: #ff267e;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 1px solid grey;
-  }
+/* InputEmail input [type = "submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  background: #ff267e;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid grey;
+}
 
-  .InputEmail input [type = "submit"]:hover {
-    background: #7FFFD4;
-    color: #7FFFD4;
-  }
+.InputEmail input [type = "submit"]:hover {
+  background: #7FFFD4;
+  color: #7FFFD4;
+} */
 
-  .InputEmail a {
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-  }
+.InputEmail a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  .tombolLogin input{
-    text-align: center;
-    height: 32px;
-    width: 75px;
-    margin-left: 70px;
-    border-radius: 0px;
-  }
+.tombolLogin input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  font-family: verdana;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
 
-  .Register {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 30px 80px;
-    transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
-    box-sizing: border-box;
-    background: rgba(0,0,0,.5);
-  }
+.tombolLogin input[type=submit]:hover {
+  background-color: #45a049;
+}
 
-  h3 {
-    margin: 0;
-    padding: 0 0 20px;
-    color: white;
-    text-align: center;
-    font-family: fantasy;
-    font-size: 30pt;
-  }
+/* .tombolLogin input{
+  text-align: center;
+  height: 32px;
+  width: 75px;
+  margin-left: 70px;
+  border-radius: 0px;
+} */
 
-  .Register input {
-    width: 330px;
-    height: 32px;
-    margin-bottom: 10px;
-    border: 2px solid grey;
-    border-radius: 10px;
-  }
+.Register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 30px 80px;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+}
 
-  .Register select {
-    width: 135px;
-    height: 32px;
-    margin-bottom: 5px;
-  }
+h3 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: white;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 30pt;
+}
 
-  .tombolRegister input{
-    height: 32px;
-    width: 100px;
-    margin-left: 105px;
-  }
+.Register input {
+  width: 330px;
+  height: 32px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
 
-  *{
-    margin: 0;
-    padding: 0;  
-  }
-  .rere{
-    width: 80%;
-    margin: auto;
-  }
-  .logo{
-    float: left;
-    cursor: pointer;
-  }
+.Register select {
+  width: 135px;
+  height: 32px;
+  margin-bottom: 5px;
+}
 
-  .logo2{
-    float: right;
-  }
+.tombolRegister input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  font-family: verdana;
+  padding: 0px 0px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
 
-  .nav{
-    margin: auto;
-    text-align: center;
-    font-family: fantasy;
-    width: 80%;
-    font-size: 20px;
-  }
-  .nav ul{
-    /*background: #7f8c8d;*/
-    list-style: none;
-    position: relative;
-    display: inline-table;
-    width: 100%;
-    padding: 0 0px;
-  }
-  .nav ul li{
-    float: left;   
-  }
+.tombolRegister input[type=submit]:hover {
+  background-color: #45a049;
+}
 
-  .Cara{
-    font-size: 28px;
-    font-family: sans-serif;
-  }
+*{
+  margin: 0;
+  padding: 0;  
+}
+.rere{
+  width: 80%;
+  margin: auto;
+}
+.logo{
+  float: left;
+  cursor: pointer;
+}
+
+.logo2{
+  float: right;
+}
+
+.nav{
+  margin: auto;
+  text-align: center;
+  font-family: fantasy;
+  width: 80%;
+  font-size: 20px;
+}
+.nav ul{
+  /*background: #7f8c8d;*/
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  width: 100%;
+  padding: 0 0px;
+}
+.nav ul li{
+  float: left;   
+}
+
+.Cara{
+  font-size: 28px;
+  font-family: sans-serif;
+}
 /*.content{
   margin-bottom: 50px;
   }*/
@@ -314,37 +340,73 @@
     font-family: cambria;
     font-family: 12pt;
   }
-        .tataCara{
-          font-size: 14pt;
-          font-family: "Comic Sans MS";
-          color : #008080;
-        }
+  .tataCara{
+    font-size: 14pt;
+    font-family: "Comic Sans MS";
+    color : #008080;
+  }
 
-        .abc h3{
-            font-family: "Comic Sans MS";
-            font-size: 15pt;
-            color: #008080;
-            line-height: 1.5em;
-          }
+  .abc h3{
+    font-family: "Comic Sans MS";
+    font-size: 15pt;
+    color: #008080;
+    line-height: 1.5em;
+  }
 
-        .abc td {
-            font-family: "Comic Sans MS";
-            font-size: 12pt;
-            color: #008080;
-            line-height: 1.3em;
-          }
+  .abc td {
+    font-family: "Comic Sans MS";
+    font-size: 12pt;
+    color: #008080;
+    line-height: 1.3em;
+  }
 
-        .tentang h1{
-          font-family: "Comic Sans MS";
-          font-size: 20pt;
-          color: #008080;
-          line-height: 1.5em;
-        }
+  .tentang h1{
+    font-family: "Comic Sans MS";
+    font-size: 20pt;
+    color: #008080;
+    line-height: 1.5em;
+  }
 
-        .tentang p{
-          font-family: "Calibri";
-          font-size: 15pt;
-          color: #008080;
-          line-height: 1.5em;
-          text-align: center;
-        }
+  .tentang p{
+    font-family: "Calibri";
+    font-size: 15pt;
+    color: #008080;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  .container {
+    width: 80%;
+    margin: auto;
+    padding-top: 9px;
+
+  }
+
+  .tips {
+    background-color: rgba(180, 180, 180, 0.5);
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #E3EF22;
+    width: 30%;
+    height: 40%;
+    display: inline-block;
+    margin: 10px 10px;
+    text-align: center;
+  }
+  .tips img {
+    width: 350px;
+    height: 250px;
+    margin: 10px auto;
+  }
+  .judul {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+  }
+  .konten{
+    text-align: left;
+  }
+  a{
+    text-decoration: none;
+    color: aqua;
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Profile</title>
+	<link rel="stylesheet" type="text/css" href="editProfil.css">
+	<link rel="shortcut icon" href="icon2.png">
+</head>
+<body>
+	<div class="UbahProfil" align="center">
+		<form name="myForm" onsubmit="return validateForm()" action="dashboard_user_jadwal.html">
+		<h2>Edit Profil</h2>
+		<form>
+			<p>Email</p>
+			<input class="form-control" type="text" id="email" name="Email" placeholder="Email">
+			<p>Password</p>
+			<input class="form-control" type="password" id="password" name="Password" placeholder="Password">
+			<p>Nama Pendaftar</p>
+			<input class="form-control" type="text" id="namapendaftar" name="Nama" placeholder="Nama Pendaftar">
+			<p>Alamat</p>
+			<input class="form-control" type="text" id="alamat" name="alamat" placeholder="Alamat">
+			<p>Pekerjaan</p>
+			<input class="form-control" type="text" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan">
+			<p>Nomor HP</p>
+			<input class="form-control" type="text" id="noHp" name="noHp" placeholder="Nomor HP">
+			<p><select name="jenis_kelamin">
+				<option class="radiobutton" value="Laki-Laki">Laki-Laki</option>
+				<option value="Perempuan">Perempuan</option>
+			</select></p><br>
+			<div class="tombolSimpan">
+				<input type="submit" name="" value="SIMPAN">
+			</div>
+		</form>
+	</div>
+		<script>
+		function validateForm() {
+			var email = document.forms["myForm"]["email"].value;
+			var password = document.forms["myForm"]["password"].value;
+			var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
+			var alamat = document.forms["myForm"]["alamat"].value;
+			var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
+			var noHp = document.forms["myForm"]["noHp"].value;
+			var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
+
+			if (email == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (password == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (namapendaftar == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (alamat == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (pekerjaan == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (noHp == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (jenis_kelamin == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}else if(email !="" && password !="" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin !=""){
+				alert ("Data berhasil diubah") ;
+				window.location.href = "user_panel.html";
+			}
+		}
+	</script>
+</body>
+</html>

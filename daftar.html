@@ -17,7 +17,7 @@
 	</style>
 	<div class="Register">																							
 		<h3>DAFTAR</h3>
-		<form class="form-horizontal" action="#!" role="form">
+		<form name="myForm" onsubmit="return validateForm()" action="index.html">
 			<p><input class="form-control" type="text" id="email" name="Email" placeholder="Email"></p>
 			<p><input class="form-control" type="password" id="password" name="Password" placeholder="Password"></p>
 			<p><input class="form-control" type="text" id="namapendaftar" name="Nama" placeholder="Nama Pendaftar"></p>
@@ -29,11 +29,48 @@
 				<option value="Perempuan">Perempuan</option>
 			</select></p><br>
 			<div class="tombolRegister">
-				<input type="submit" name="" value="Register" onclick="location.href='index.html'">
+				<input type="submit" name="" value="Register">
 			</div>
 		</form>
 	</div>
 
+	<script>
+		function validateForm() {
+			var email = document.forms["myForm"]["email"].value;
+			var password = document.forms["myForm"]["password"].value;
+			var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
+			var alamat = document.forms["myForm"]["alamat"].value;
+			var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
+			var noHp = document.forms["myForm"]["noHp"].value;
+			var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
+
+			if (email == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (password == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (namapendaftar == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (alamat == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (pekerjaan == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (noHp == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}if (jenis_kelamin == "") {
+				alert("Data harus diisi semua");
+				return false;
+			}else if(email !="" && password !="" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin !=""){
+				alert ("Selamat anda berhasil registrasi") ;
+				window.location.href = "user_panel.html";
+			}
+		}
+	</script>
 	<!-- <script type="text/javascript">
 		function returnValidation(){
 			var email = document.getElementById("email").value;
