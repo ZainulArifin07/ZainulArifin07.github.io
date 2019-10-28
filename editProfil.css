@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #778899;
+	background-size: cover;
+	font-family: Lucida Sans Unicode;
+}
+
+.UbahProfil {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 30px 80px;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 650px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.5);
+}
+
+.UbahProfil h2 {
+  margin: 0;
+  padding: 0 0 0px;
+  color: white;
+  text-align: center;
+  font-family: Lucida Sans Unicode;
+  font-size: 30pt;
+}
+
+.UbahProfil p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.UbahProfil input {
+  width: 330px;
+  height: 32px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.UbahProfil select {
+  width: 135px;
+  height: 32px;
+  margin-bottom: 5px;
+}
+
+.tombolSimpan input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	font-family: verdana;
+	padding: 0px 0px;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	width: 100px;
+  	height: 40px;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
