@@ -4,6 +4,9 @@ body{
     color: white;
     background-color: ghostwhite;
 }
+body h3{
+  color: black;
+}
 
 .sidebar{
     width: 200px;
@@ -235,6 +238,8 @@ section.mounth {
   article {
     color: black;
     text-align: left;
+    border: 3px solid #ccc;
+    border-radius: 10px;
   }
   article b,
   article span {
@@ -285,6 +290,7 @@ section.mounth {
     display: block;
     overflow: hidden;
     clear: both;
+    margin-left: 15px;
   }
   /****/
       /* hasil latihan */

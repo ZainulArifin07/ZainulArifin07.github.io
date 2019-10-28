@@ -21,11 +21,11 @@ ul {
 a {
   cursor:pointer;
   display:block;
-  color:#b3b3b3;
+  color:#fff8cd;
   text-decoration:none;
 }
 .bckg {
-  background-color:#383B42;
+  background-color:#5edfff;
   box-shadow:-4px 0px 10px rgba(14, 14, 14, 0.48) inset;
   width:200px;
   height:100%;
@@ -41,15 +41,14 @@ h1 {
     margin:0;
     font-size:20px;
     letter-spacing:2px;
-    background-color:#34363A;
-    border-bottom:1px solid rgba(101, 116, 134, 0.57);
+    background-color:#39bdc8;
 }
 h2 {
   font-size: 20px;
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 3px;
-  color: #919191;
+  color: #5edfff;
   font-weight: normal;
   padding-left: 40px;
   line-height: 60px;
@@ -66,11 +65,12 @@ h2 {
     position: absolute;
     left: -19px;
     top: 12px;
-    background-color:#34363A;
+    background-color:#39bdc8;
     -webkit-transform:rotate(45deg);
     -moz-transform:rotate(45deg);
     transform:rotate(45deg);
-  }
+}
+
 h3 {
   font-size: 17px;
   margin:0;
@@ -87,12 +87,12 @@ header {
   position:relative;
   z-index:99;
 } 
-  header nav ul li {
-    border-bottom:1px solid #42454D;
-    padding-left:48px;
-    transition:all 0.6s;
-    border-top:1px solid #2E3036;
-  }    
+header nav ul li {
+  border-bottom:1px solid #fff8cd;
+  padding-left:48px;
+  transition:all 0.6s;
+  border-top:1px solid #fff8cd;
+}   
     header nav ul li:hover {
         background-color: #454952;
         transition: all 0.6s;
@@ -135,7 +135,7 @@ main {
   display:flex;
 }
   .title a {
-    color: #AAA;
+    color: #5edfff;
     width: auto;
     margin: 0 20px;
     float: none;
@@ -152,13 +152,13 @@ main {
     }
 
     .dropbtn {
-        background-color: #4CAF50;
+        background-color: #39bdc8;
         color: white;
         padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
-        margin-right: 450px;
+        margin-right: 400px;
         margin-top: 5px;
       }
       
@@ -192,7 +192,7 @@ main {
       }
       
       .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
+        background-color: #5edfff;
       }
 
 
@@ -383,7 +383,7 @@ a:hover {
         background: #eee; 
       }
       th { 
-        background: #34363A; 
+        background: #39bdc8; 
         color: white; 
         font-weight: bold; 
       }
