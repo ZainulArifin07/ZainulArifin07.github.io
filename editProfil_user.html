@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="editProfil.css">
+	<link rel="stylesheet" type="text/css" href="CSS/editProfil.css">
+	<script src="JS/js.js"></script>
+	<script src="JS/jquery.js"></script>
 	<title>Edit Profile</title>
 </head>
 <body>
@@ -41,10 +43,9 @@
 						<fieldset>
 							<legend>Foto Profil</legend>
 							<div>  
-								<center><img src="h#" alt="" width="240px" height="240px"/>
-									<label for="myPic">Edit Foto Profil</label>
-									<input type="url" name="foto" id="foto" size="35" value ="">
-									<center><input class="button_browser" type="submit" value="Browser"/></center>
+								<center><img src="#" alt="" width="240px" height="240px"/>
+									<input type="file" name="gambar" id="preview_gambar"/>
+									<img src="#" id="gambar_nodin" width="400" alt="Preview Gambar"/>
 								</div>
 								<br>
 							</center>
@@ -80,43 +81,51 @@
 				<center><input type="submit" value="Simpan Perubahan"/></center>
 			</div>
 		</div>
-</main>
-<script>
-	function validateForm() {
-		var email = document.forms["myForm"]["email"].value;
-		var password = document.forms["myForm"]["password"].value;
-		var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
-		var alamat = document.forms["myForm"]["alamat"].value;
-		var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
-		var noHp = document.forms["myForm"]["noHp"].value;
-		var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
+	</main>
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#toggle").click(function() {
+				$("#dropdown").slideToggle("fast");
+			});
+		});
+	</script>
+	<script>
+		function validateForm() {
+			var email = document.forms["myForm"]["email"].value;
+			var password = document.forms["myForm"]["password"].value;
+			var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
+			var alamat = document.forms["myForm"]["alamat"].value;
+			var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
+			var noHp = document.forms["myForm"]["noHp"].value;
+			var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
 
-		if (email == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (password == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (namapendaftar == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (alamat == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (pekerjaan == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (noHp == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (jenis_kelamin == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}else if(email !="" && password !="" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin !=""){
-			alert ("Data berhasil diubah") ;
-			window.location.href = "editProfil_user.html";
+			if (email == "") {
+				alert("Email harus diisi");
+				return false;
+			}if (password == "") {
+				alert("Password harus diisi");
+				return false;
+			}if (namapendaftar == "") {
+				alert("Nama Pendaftar harus diisi");
+				return false;
+			}if (alamat == "") {
+				alert("Alamat harus diisi");
+				return false;
+			}if (pekerjaan == "") {
+				alert("Pekerjaan harus diisi");
+				return false;
+			}if (noHp == "") {
+				alert("Nomor HP harus diisi");
+				return false;
+			}if (jenis_kelamin == "") {
+				alert("Jenis Kelamin harus diisi");
+				return false;
+			}else if(email !="" && password !="" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin !=""){
+				alert ("Data berhasil diubah") ;
+				window.location.href = "editProfil_user.html";
+			}
 		}
-	}
-</script>
+	</script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Daftar-KOSAKATA</title>
-	<link rel="stylesheet" type="text/css" href="kosakata.css">
+	<link rel="stylesheet" type="text/css" href="CSS/kosakata.css">
 	<link rel="shortcut icon" href="Gambar/icon2.png">
 </head>
 <body>
@@ -33,7 +33,14 @@
 			</div>
 		</form>
 	</div>
-
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#toggle").click(function() {
+				$("#formRegister").validate();
+			});
+		});
+	</script>
 	<script>
 		function validateForm() {
 			var email = document.forms["myForm"]["email"].value;
@@ -45,25 +52,25 @@
 			var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
 
 			if (email == "") {
-				alert("Data harus diisi semua");
+				alert("Email harus diisi");
 				return false;
 			}if (password == "") {
-				alert("Data harus diisi semua");
+				alert("Password harus diisi");
 				return false;
 			}if (namapendaftar == "") {
-				alert("Data harus diisi semua");
+				alert("Nama Pendaftar harus diisi");
 				return false;
 			}if (alamat == "") {
-				alert("Data harus diisi semua");
+				alert("Alamat harus diisi");
 				return false;
 			}if (pekerjaan == "") {
-				alert("Data harus diisi semua");
+				alert("Pekerjaan harus diisi");
 				return false;
 			}if (noHp == "") {
-				alert("Data harus diisi semua");
+				alert("Nomor HP harus diisi");
 				return false;
 			}if (jenis_kelamin == "") {
-				alert("Data harus diisi semua");
+				alert("Jenis Kelamin harus diisi");
 				return false;
 			}else if(email !="" && password !="" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin !=""){
 				alert ("Selamat anda berhasil registrasi") ;
@@ -71,33 +78,6 @@
 			}
 		}
 	</script>
-	<!-- <script type="text/javascript">
-		function returnValidation(){
-			var email = document.getElementById("email").value;
-			var password = document.getElementById("password").value;
-			var namapendaftar = document.getElementsById("namapendaftar").value;
-			var alamat = document.getElementsById("alamat").value;
-			var pekerjaan = document.getElementsById("pekerjaan").value;
-			var noHp = document.getElementsById("noHp").value;
-
-			console.log(email);
-
-			if(email == "" && password == "" && namapendaftar == "" && alamat == "" && pekerjaan == "" && noHp == ""){
-				alert ("Data tidak boleh kosong") ;
-				return false;
-			}
-			else if(email != "" && password != "" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != ""){
-				alert ("Data berhasil diisi!!") ;
-				window.location.href = "awal.html";
-
-			}
-			else{
-				alert ("Data tidak boleh kosong") ;
-				return false;
-			}
-		}
-
-	</script> -->
 </body>
 </html>
 <!-- onclick="location.href='awal.html'" -->
