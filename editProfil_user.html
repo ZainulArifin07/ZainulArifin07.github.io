@@ -1,122 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" type="text/css" href="editProfil.css">
-	<title>Edit Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="editProfil.css">
+    <script src="jquery-3.4.0.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="panel.js"></script>
+    <title>Edit Profile</title>
 </head>
+
 <body>
-	<span class="bckg"></span>
-	<header>
-		<h1>Dashboard</h1>
-		<nav>
-			<ul>
-				<li><a href="dashboard_user_jadwal.html"><span>Jadwalku</span></a></li>
-				<li><a href="dashboard_user_materi.html" class="el-a"><span>Daftar Materi</span></a></li>
-				<li><a href="dashboard_user_hasil.html" class="el-b"><span>Hasil Latihan</span></a></li>
-				<li><a href="editProfil_user.html" class="el-b"><span>Edit Profil</span></a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<div class="title">
-			<h2>Jadwalku</h2>
-			<div class="dropdown">
-				<button class="dropbtn">Bahasa : Bahasa Madura</button>
-				<div class="dropdown-content">
-					<a href="#">Bahasa Jawa</a>
-					<a href="#">Bahasa Minangkabau</a>
-					<a href="#">Bahasa Sunda</a>
-				</div>
-			</div>
-			<a href="javascript:void(0);">Hello Bob !</a>
-		</div>
-		<div id = "wrapper">
-			<div id = "content"><br>
-				<h1>Edit Profile</h1>
-				<div id = "RightColumn">
-					<form id ="PPicture" action="">
-						<fieldset>
-							<legend>Foto Profil</legend>
-							<div>  
-								<center><img src="h#" alt="" width="240px" height="240px"/>
-									<label for="myPic">Edit Foto Profil</label>
-									<input type="url" name="foto" id="foto" size="35" value ="">
-									<center><input class="button_browser" type="submit" value="Browser"/></center>
-								</div>
-								<br>
-							</center>
-						</fieldset>
-					</form>
-				</div>
-				<form name="myForm" onsubmit="return validateForm()" action="dashboard_user_jadwal.html" id="profile" action = "">
-					<fieldset>
-						<legend>Informasi Profil</legend>
-						<br>
-						<label for="email">Email : </label>
-						<input type="text" name="email" id="email" required value ="Email">
-						<label for="password">Password : </label>
-						<input type="password" name="password" id="password" required value ="password">
-						<label for="namapendaftar">Nama Pendaftar : </label>
-						<input type="text" name="namapendaftar" id="namapendaftar" required value ="Nama Pendaftar">          
-						<label for="alamat">Alamat : </label>
-						<textarea name="myBio" id="alamat" rows="2" cols="32" required value ="Alamat"></textarea>
-						<label for="pekerjaan">Pekerjaan : </label>
-						<input type="text" name="pekerjaan" id="pekerjaan" required value ="Pekerjaan">
-						<label for="noHp">Nomor HP : </label>
-						<input type="text" name="noHp" id="noHp" required value ="Nomor HP">
-						<label for="jenis_kelamin">Jenis Kelamin : </label>
-						<select name="jenis_kelamin">
+    <span class="bckg"></span>
+    <header>
+        <h1>Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard_user_jadwal.html"><span>Jadwalku</span></a></li>
+                <li><a href="dashboard_user_materi.html" class="el-a"><span>Daftar Materi</span></a></li>
+                <li><a href="dashboard_user_hasil.html" class="el-b"><span>Hasil Latihan</span></a></li>
+                <li><a href="editProfil_user.html" class="el-b"><span>Edit Profil</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Jadwalku</h2>
+            <div class="dropdown">
+                <button class="dropbtn">Bahasa : Bahasa Madura</button>
+                <div class="dropdown-content">
+                    <a href="#">Bahasa Jawa</a>
+                    <a href="#">Bahasa Minangkabau</a>
+                    <a href="#">Bahasa Sunda</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);">Hello Bob !</a>
+        </div>
+        <div id="wrapper">
+            <div id="content"><br>
+                <h1>Edit Profile</h1>
+                <div id="RightColumn">
+                    <form id="PPicture" action="">
+                        <fieldset>
+                            <legend>Foto Profil</legend>
+                            <h4>*klik gambar untuk ganti foto profile</h4>
+                            <div class="avatar-wrapper">
+                                <img class="profile-pic" src="spoiler.png" />
+                                <div class="upload-button">
+                                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                                </div>
+                                <input class="file-upload" type="file" accept="image/*" />
+                            </div>
+                            <br>
+                        </fieldset>
+                    </form>
+                </div>
+                <form name="myForm" onsubmit="return validateForm()" action="dashboard_user_jadwal.html" id="profile" action="">
+                    <fieldset>
+                        <legend>Informasi Profil</legend>
+                        <br>
+                        <label for="email">Email : </label>
+                        <input type="text" name="email" id="email" required value="Email">
+                        <label for="password">Password : </label>
+                        <input type="password" name="password" id="password" required value="password">
+                        <label for="namapendaftar">Nama Pendaftar : </label>
+                        <input type="text" name="namapendaftar" id="namapendaftar" required value="Nama Pendaftar">
+                        <label for="alamat">Alamat : </label>
+                        <textarea name="myBio" id="alamat" rows="2" cols="32" required value="Alamat"></textarea>
+                        <label for="pekerjaan">Pekerjaan : </label>
+                        <input type="text" name="pekerjaan" id="pekerjaan" required value="Pekerjaan">
+                        <label for="noHp">Nomor HP : </label>
+                        <input type="text" name="noHp" id="noHp" required value="Nomor HP">
+                        <label for="jenis_kelamin">Jenis Kelamin : </label>
+                        <select name="jenis_kelamin">
 							<option class="radiobutton" value="Laki-Laki">Laki-Laki</option>
 							<option value="Perempuan">Perempuan</option>
 						</select>
-					</fieldset>
-				</form>
-				<br>
-			</div>
-			<div class="bottom">
-				<center><input type="submit" value="Simpan Perubahan"/></center>
-			</div>
-		</div>
-</main>
-<script>
-	function validateForm() {
-		var email = document.forms["myForm"]["email"].value;
-		var password = document.forms["myForm"]["password"].value;
-		var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
-		var alamat = document.forms["myForm"]["alamat"].value;
-		var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
-		var noHp = document.forms["myForm"]["noHp"].value;
-		var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
+                    </fieldset>
+                </form>
+                <br>
+            </div>
+            <div class="bottom">
+                <center><input type="submit" value="Simpan Perubahan" /></center>
+            </div>
+        </div>
+    </main>
+    <script>
+        function validateForm() {
+            var email = document.forms["myForm"]["email"].value;
+            var password = document.forms["myForm"]["password"].value;
+            var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
+            var alamat = document.forms["myForm"]["alamat"].value;
+            var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
+            var noHp = document.forms["myForm"]["noHp"].value;
+            var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
 
-		if (email == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (password == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (namapendaftar == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (alamat == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (pekerjaan == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (noHp == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}if (jenis_kelamin == "") {
-			alert("Data harus diisi semua");
-			return false;
-		}else if(email !="" && password !="" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin !=""){
-			alert ("Data berhasil diubah") ;
-			window.location.href = "editProfil_user.html";
-		}
-	}
-</script>
+            if (email == "") {
+                alert("Data harus diisi semua");
+                return false;
+            }
+            if (password == "") {
+                alert("Data harus diisi semua");
+                return false;
+            }
+            if (namapendaftar == "") {
+                alert("Data harus diisi semua");
+                return false;
+            }
+            if (alamat == "") {
+                alert("Data harus diisi semua");
+                return false;
+            }
+            if (pekerjaan == "") {
+                alert("Data harus diisi semua");
+                return false;
+            }
+            if (noHp == "") {
+                alert("Data harus diisi semua");
+                return false;
+            }
+            if (jenis_kelamin == "") {
+                alert("Data harus diisi semua");
+                return false;
+            } else if (email != "" && password != "" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin != "") {
+                alert("Data berhasil diubah");
+                window.location.href = "editProfil_user.html";
+            }
+        }
+        $(document).ready(function() {
+
+            var readURL = function(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function(e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $(".file-upload").on('change', function() {
+                readURL(this);
+            });
+
+            $(".upload-button").on('click', function() {
+                $(".file-upload").click();
+            });
+        });
+    </script>
 </body>
+
 </html>
