@@ -36,53 +36,54 @@
                     <a href="#">Bahasa Sunda</a>
                 </div>
             </div>
-            <a href="javascript:void(0);">Hello Bob !</a>
-        </div>
-        <div id="wrapper">
-            <div id="content"><br>
-                <h1>Edit Profile</h1>
-                <div id="RightColumn">
-                    <form id="PPicture" action="">
-                        <fieldset>
-                            <legend>Foto Profil</legend>
-                            <h4>*klik gambar untuk ganti foto profile</h4>
-                            <div class="avatar-wrapper">
-                                <img class="profile-pic" src="Gambar/user.png" />
-                                <div class="upload-button">
-                                    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-                                </div>
-                                <input class="file-upload" type="file" accept="image/*" />
-                            </div>
-                            <br>
-                        </fieldset>
-                    </form>
-                </div>
-                <form name="myForm" onsubmit="return validateForm()" action="dashboard_user_jadwal.html" id="profile" action="">
-                    <fieldset>
-                        <legend>Informasi Profil</legend>
-                        <br>
-                        <label for="email">Email : </label>
-                        <input type="text" name="email" id="email" required value="Email">
-                        <label for="password">Password : </label>
-                        <input type="password" name="password" id="password" required value="password">
-                        <label for="namapendaftar">Nama Pendaftar : </label>
-                        <input type="text" name="namapendaftar" id="namapendaftar" required value="Nama Pendaftar">
-                        <label for="alamat">Alamat : </label>
-                        <textarea name="myBio" id="alamat" rows="2" cols="32" required value="Alamat"></textarea>
-                        <label for="pekerjaan">Pekerjaan : </label>
-                        <input type="text" name="pekerjaan" id="pekerjaan" required value="Pekerjaan">
-                        <label for="noHp">Nomor HP : </label>
-                        <input type="text" name="noHp" id="noHp" required value="Nomor HP">
-                        <label for="jenis_kelamin">Jenis Kelamin : </label>
-                        <select name="jenis_kelamin">
-							<option class="radiobutton" value="Laki-Laki">Laki-Laki</option>
-							<option value="Perempuan">Perempuan</option>
-						</select>
-                    </fieldset>
-                </form>
-                <br>
+            <a id="logout" href="index.html">
+                <img src="Gambar/logout.png" alt="output.png" width="30px" height="30px"></a>
             </div>
-            <div class="bottom">
+            <div id="wrapper">
+                <div id="content"><br>
+                    <h1>Edit Profile</h1>
+                    <div id="RightColumn">
+                        <form id="PPicture" action="">
+                            <fieldset>
+                                <legend>Foto Profil</legend>
+                                <h4>*klik gambar untuk ganti foto profile</h4>
+                                <div class="avatar-wrapper">
+                                    <img class="profile-pic" src="Gambar/user.png" />
+                                    <div class="upload-button">
+                                        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+                                    </div>
+                                    <input class="file-upload" type="file" accept="image/*" />
+                                </div>
+                                <br>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <form name="myForm" onsubmit="return validateForm()" action="dashboard_user_jadwal.html" id="profile" action="">
+                        <fieldset>
+                            <legend>Informasi Profil</legend>
+                            <br>
+                            <label for="email">Email : </label>
+                            <input type="text" name="email" id="email" required value="Email">
+                            <label for="password">Password : </label>
+                            <input type="password" name="password" id="password" required value="password">
+                            <label for="namapendaftar">Nama Pendaftar : </label>
+                            <input type="text" name="namapendaftar" id="namapendaftar" required value="Nama Pendaftar">
+                            <label for="alamat">Alamat : </label>
+                            <textarea name="myBio" id="alamat" rows="2" cols="32" required value="Alamat"></textarea>
+                            <label for="pekerjaan">Pekerjaan : </label>
+                            <input type="text" name="pekerjaan" id="pekerjaan" required value="Pekerjaan">
+                            <label for="noHp">Nomor HP : </label>
+                            <input type="text" name="noHp" id="noHp" required value="Nomor HP">
+                            <label for="jenis_kelamin">Jenis Kelamin : </label>
+                            <select name="jenis_kelamin">
+                             <option class="radiobutton" value="Laki-Laki">Laki-Laki</option>
+                             <option value="Perempuan">Perempuan</option>
+                         </select>
+                     </fieldset>
+                 </form>
+                 <br>
+             </div>
+             <div class="bottom">
                 <center><input type="submit" value="Simpan Perubahan" /></center>
             </div>
         </div>
