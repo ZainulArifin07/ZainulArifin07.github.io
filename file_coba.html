@@ -12,8 +12,8 @@
   <header>
     <h1>Dashboard</h1>
     <nav>
-      <ul>
-        <li><a href="dashboard_user_jadwal.html"><span>Jadwalku</span></a></li>
+      <ul id="menu">
+        <li><a id="jadwal" href="dashboard_user_jadwal.html"><span>Jadwalku</span></a></li>
         <li><a href="dashboard_user_materi.html" class="el-a"><span>Daftar Materi</span></a></li>
         <li><a href="dashboard_user_hasil.html" class="el-b"><span>Hasil Latihan</span></a></li>
         <li><a href="editProfil_user.html" class="el-c"><span>Edit Profil</span></a></li>
@@ -82,7 +82,12 @@
     </section>
   </div>
 </main>
-<script src="jquery-3.4.1.min.js"></script>
-<script src="dashboard_user_materi.js"></script>
+
+<script src="jquery-3.4.1.min.js">
+  var menuMenu = new ddajaxtabs("menu", "jadwal")
+  menuMenu.setpersist(true)
+  menuMenu.setselectedClassTarget("dashboard_user_jadwal") //"link" or "linkparent"
+  menuMenu.init();
+</script>
 </body>
 </html>
