@@ -58,10 +58,13 @@
                         <button><a href="./soal.pdf" target="_blank">Download Materi</a></button><br>
                     </p>
                 </div>
+
+
             </article>
             <button id="loadMore">Load More</button>
         </main>
         <script src="jquery-3.4.1.min.js"></script>
+        <script src="dashboard_user_materi.js"></script>
         <script type="text/javascript">
             $("#loadMore").click(function(){
                 var page = $(".larg").attr("page");
@@ -77,7 +80,7 @@
                 if (page == 2) {
                     $(loadMore).hide();
                 }
-                var path = "json/file" + page + "json";
+                var path = "json/file_" + page + ".json";
 
                 $.ajax({
                     url: path,
