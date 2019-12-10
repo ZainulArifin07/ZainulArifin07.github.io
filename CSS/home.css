@@ -1,236 +1,427 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
-  width: 100%;
-  margin: auto;
-  background-image: url("Gambar/pattern1.jpg");
-  background-size: cover;
-  /*background-repeat: no-repeat;*/
-}
-.rere{
-  width: 80%;
-  margin: auto;
+body {
+    width: 100%;
+    margin: auto;
+    background-image: url("Gambar/pattern1.jpg");
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
 }
 
-.logo{
-  float: left;
-  cursor: pointer;
+.rere {
+    width: 80%;
+    margin: auto;
 }
 
-.logo2{
-  float: right;
-}
-.nav{
-  margin: auto;
-  text-align: center;
-  font-family: fantasy;
-  width: 80%;
-  font-size: 20px;
-}
-.nav ul{
-  /*background: #7f8c8d;*/
-  list-style: none;
-  position: relative;
-  display: inline-table;
-  width: 100%;
-  padding: 0 0px;
-}
-.nav ul li{
-  float: left;   
+.logo {
+    float: left;
+    cursor: pointer;
 }
 
-.Cara{
-	font-size: 28px;
-	font-family: sans-serif;
+.logo2 {
+    float: right;
 }
+
+.nav {
+    margin: auto;
+    text-align: center;
+    font-family: fantasy;
+    width: 80%;
+    font-size: 20px;
+}
+
+.nav ul {
+    /*background: #7f8c8d;*/
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 100%;
+    padding: 0 0px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.Cara {
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+
 /*.content{
 	margin-bottom: 50px;
   }*/
-  .nav ul li img{
-   margin-right: 100px;
- }
- .nav .aa:hover{
-  background: #16a085;
-}
-.nav ul li:hover a{
-  color: snow;
-}
-.nav ul li a{
-  display: block;
-  padding: 20px;
-  color: #555;
-  text-decoration: none;
+
+.nav ul li img {
+    margin-right: 100px;
 }
 
-.btn-default{
- float: right;
- /*ubah warna background*/
- background-color: #7942ee;
- /*ubah warna teks*/
- color: white;
- /*menghilangkan border*/
- border: none;
- /*atur sudut border*/
- border-radius: 5px;
- /*efek bayangan*/
- box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
- /*teks rata tengah*/
- text-align: center;
- /*ubah jarak margin/luar*/
- margin: 5px 2px;
- /*ubah jarak padding/dalam*/
- padding: 10px 15px;
- /*ubah tampilan kursor ketika berada diatas elemen*/
- cursor: pointer;
- font-family: fantasy;
-}
-.btn-default:hover{
-  /*ubah warna background ketika kursor berada diatas elemen*/
-  background-color: #6124e3;
+.nav .aa:hover {
+    background: #16a085;
 }
 
-.PilihBahasa{
-	font-size: 12px;
-	font-family: sans-serif;
-	text-align: center;
-	color: #202020;	
+.nav ul li:hover a {
+    color: snow;
 }
 
-.Btn-Daerah{
- /*atur sudut border*/
- border-radius: 5px;
- /*teks rata tengah*/
- text-align: center;
- /*ubah jarak margin/luar*/
- margin: 5px 2px;       
-}
-.Btn-Daerah .btn-de{
-  position: relative;
-  color: white;
-  font-family: fantasy;
-  padding: 15px 60px;
-  background-color: #7942ee;
-  font-size: 14pt;
-  border-radius: 10px;
-  cursor: pointer;
+.nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #555;
+    text-decoration: none;
 }
 
-.logo3{
-  float: left;
+.btn-default {
+    float: right;
+    /*ubah warna background*/
+    background-color: #7942ee;
+    /*ubah warna teks*/
+    color: white;
+    /*menghilangkan border*/
+    border: none;
+    /*atur sudut border*/
+    border-radius: 5px;
+    /*efek bayangan*/
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    /*teks rata tengah*/
+    text-align: center;
+    /*ubah jarak margin/luar*/
+    margin: 5px 2px;
+    /*ubah jarak padding/dalam*/
+    padding: 10px 15px;
+    /*ubah tampilan kursor ketika berada diatas elemen*/
+    cursor: pointer;
+    font-family: fantasy;
 }
-.AyoB{
-	font-size: 28px;
-	font-family: sans-serif;
-	float: right;
+
+.btn-default:hover {
+    /*ubah warna background ketika kursor berada diatas elemen*/
+    background-color: #6124e3;
 }
-.AyoBel{
-  color: white;
-  font-family: fantasy;
-  padding: 15px 60px;
-  background-color: #7942ee;
-  font-size: 14pt;
-  border-radius: 10px;
-  cursor: pointer;	
+
+.PilihBahasa {
+    font-size: 12px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #202020;
 }
+
+.Btn-Daerah {
+    /*atur sudut border*/
+    border-radius: 5px;
+    /*teks rata tengah*/
+    text-align: center;
+    /*ubah jarak margin/luar*/
+    margin: 5px 2px;
+}
+
+.Btn-Daerah .btn-de {
+    position: relative;
+    color: white;
+    font-family: fantasy;
+    padding: 15px 60px;
+    background-color: #7942ee;
+    font-size: 14pt;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo3 {
+    float: left;
+}
+
+.AyoB {
+    font-size: 28px;
+    font-family: sans-serif;
+    float: right;
+}
+
+.AyoBel {
+    color: white;
+    font-family: fantasy;
+    padding: 15px 60px;
+    background-color: #7942ee;
+    font-size: 14pt;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .footer {
-  clear: both;
-  margin-top: 50px;
-  bottom: 0%;
-  left: 0%;
-  width: 100%;
-  height: 45%;
-  background: rgba(0,0,0, 0.7);
+    clear: both;
+    margin-top: 50px;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 45%;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .kosakata {
-  float: none;
-  margin: 0px 0 20px 0;
-  padding: 0px;
+    float: none;
+    margin: 0px 0 20px 0;
+    padding: 0px;
 }
 
 .cs {
-  float: none;
-  margin: 0px 0 20px 0;
+    float: none;
+    margin: 0px 0 20px 0;
 }
 
 .footer h3 {
-  color: white;
-  font-family: arial;
-  font-size: 15pt;
+    color: white;
+    font-family: arial;
+    font-size: 15pt;
 }
 
 .footer p {
-  color: white;
-  font-family: verdana;
-  font-family: 12pt;
+    color: white;
+    font-family: verdana;
+    font-family: 12pt;
 }
 
 .aaa {
-  /* color:  */
-  font-family: cambria;
-  font-family: 12pt;
+    /* color:  */
+    font-family: cambria;
+    font-family: 12pt;
 }
 
 .footer td {
-  color: white;
-  font-family: cambria;
-  font-family: 12pt;
+    color: white;
+    font-family: cambria;
+    font-family: 12pt;
 }
 
 .UbahRegister {
-  font-family: cursive;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 10px 190px;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 620px;
-  box-sizing: border-box;
-  background: rgba(0,0,0,.5);
+    font-family: cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px 190px;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 620px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .5);
 }
 
-.UbahRegister table tr td input{
-  margin-left: 20px;
-  width: 400px;
-  height: 40px;
-  margin-bottom: 5px;
+.UbahRegister table tr td input {
+    margin-left: 20px;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 5px;
 }
 
 .UbahRegister input[type="date"] {
-  width: 180px;
-  height: 40px;
-  margin-bottom: 5px;
+    width: 180px;
+    height: 40px;
+    margin-bottom: 5px;
 }
 
-.UbahRegister select{
-  width: 180px;
-  height: 40px;
-  margin-bottom: 5px;
-  margin-left: 20px;
+.UbahRegister select {
+    width: 180px;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 ::selection {
-  background: rgba(0,0,0,.05);
+    background: rgba(0, 0, 0, .05);
 }
-/*body {
-  padding: 0px;
-  font-family: 'Open Sans', sans-serif;
-}*/
-ul, h1, h2, h3, h4 {
-  margin: 0; padding: 0;
-  list-style: none;
+
+ul,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-a, li,
+
+a,
+li,
 header nav span,
 article span {
-  text-decoration: none;
-  transition: all .25s ease-in-out;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
 }
+
 h1 {
-  font: 55px 'Open Sans';
-  color: #4c5373;
+    font: 55px 'Open Sans';
+    color: #4c5373;
+}
+
+
+/* modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.modal-body {
+    padding: 70px 20px;
+    background: #ebebeb;
+}
+
+.modal-form p input,
+.modal-form select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: monospace;
+    font-size: 0.95em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#register {
+    cursor: pointer;
+    background: #16a085;
+}
+
+.modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* modal 2 */
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content2 {
+    margin: 10% auto;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header2 h2,
+.modal-footer2 h3 {
+    margin: 0;
+}
+
+.modal-header2 {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.modal-body2 {
+    padding: 70px 20px;
+    background: #fff;
+}
+
+.modal-form input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: monospace;
+    font-size: 0.95em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#login {
+    cursor: pointer;
+    background: #16a085;
+}
+
+.modal-footer2 {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.close2 {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
