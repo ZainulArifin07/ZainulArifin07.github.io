@@ -271,6 +271,26 @@
         });
     </script>
 
+    <script type="text/javascript">
+        function returnValidation() {
+            var email2 = document.getElementById("email2").value;
+            var password2 = document.getElementById("password2").value;
+
+            console.log(email2);
+
+            if (email2 == "" && password2 == "") {
+                alert("Data tidak boleh kosong");
+                return false;
+            } else if (email2 != "" && password2 != "") {
+                alert("Anda berhasil masuk");
+                window.location.href = "https://zainularifin07.github.io/dashboard_user_jadwal.html";
+
+            } else {
+                alert("Data tidak boleh kosong");
+                return false;
+            }
+        }
+    </script>
     <script>
         function validateForm() {
             var email = document.forms["myForm"]["email"].value;
@@ -314,28 +334,6 @@
             }
         }
     </script>
-
-    <script type="text/javascript">
-        function returnValidation() {
-            var email2 = document.getElementById("email2").value;
-            var password2 = document.getElementById("password2").value;
-
-            console.log(email2);
-
-            if (email2 == "" && password2 == "") {
-                alert("Data tidak boleh kosong");
-                return false;
-            } else if (email2 != "" && password2 != "") {
-                alert("Anda berhasil masuk");
-                window.location.href = "https://zainularifin07.github.io/dashboard_user_jadwal.html";
-
-            } else {
-                alert("Data tidak boleh kosong");
-                return false;
-            }
-        }
-    </script>
-
     <script>
         const modal = document.querySelector('#my-modal');
         const modalBtn = document.querySelector('#modal-btn');
