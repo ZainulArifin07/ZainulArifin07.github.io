@@ -156,7 +156,7 @@
             </div>
             <div class="modal-body">
                 <div class="modal-form">
-                    <form name="myForm" onsubmit="return validateForm()" action="index.html">
+                    <form name="myForm">
                         <p><input class="form-control" type="text" id="email" name="Email" placeholder="Email"></p>
                         <p><input class="form-control" type="password" id="password" name="Password" placeholder="Password"></p>
                         <p><input class="form-control" type="text" id="namapendaftar" name="Nama" placeholder="Nama Pendaftar"></p>
@@ -168,7 +168,7 @@
             <option value="Perempuan">Perempuan</option>
           </select></p><br>
                         <div class="tombolRegister">
-                            <input type="submit" name="" value="Register" id="register">
+                            <input onclick="validateForm()" type="submit" name="" value="Register" id="register">
                         </div>
                     </form>
                 </div>
@@ -283,7 +283,7 @@
                 return false;
             } else if (email2 != "" && password2 != "") {
                 alert("Anda berhasil masuk");
-                window.location.href = "https://zainularifin07.github.io/dashboard_user_jadwal.html";
+                window.location.href = "dashboard_user_jadwal.html";
 
             } else {
                 alert("Data tidak boleh kosong");
@@ -328,9 +328,10 @@
             if (jenis_kelamin == "") {
                 alert("Jenis Kelamin harus diisi");
                 return false;
-            } else if (email != "" && password != "" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin != "") {
-                alert("Selamat anda berhasil registrasi");
-                window.location.href = "https://zainularifin07.github.io/dashboard_user_jadwal.html";
+            } else {
+                location.replace("https://zainularifin07.github.io/dashboard_user_jadwal.html");
+                alert("");
+                console.log("berhasil");
             }
         }
     </script>
