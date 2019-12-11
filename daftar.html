@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Daftar-KOSAKATA</title>
-	<link rel="stylesheet" type="text/css" href="CSS/kosakata.css">
-	<link rel="shortcut icon" href="Gambar/icon2.png">
+    <title>Daftar-KOSAKATA</title>
+    <link rel="stylesheet" type="text/css" href="CSS/kosakata.css">
+    <link rel="shortcut icon" href="Gambar/icon2.png">
 </head>
+
 <body>
-	<style type="text/css">
-		body {
-			margin: 0;
-			padding: 0;
-			background: url(Gambar/background--.jpg);
-			background-size: cover;
-			font-family: sans-serif;
-		}
-	</style>
-	<div class="Register">																							
-		<h3>DAFTAR</h3>
-		<form name="myForm" onsubmit="return validateForm()" action="index.html">
-			<p><input class="form-control" type="text" id="email" name="Email" placeholder="Email"></p>
-			<p><input class="form-control" type="password" id="password" name="Password" placeholder="Password"></p>
-			<p><input class="form-control" type="text" id="namapendaftar" name="Nama" placeholder="Nama Pendaftar"></p>
-			<p><input class="form-control" type="text" id="alamat" name="alamat" placeholder="Alamat"></p>
-			<p><input class="form-control" type="text" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"></p>
-			<p><input class="form-control" type="text" id="noHp" name="noHp" placeholder="Nomor HP"></p>
-			<p><select name="jenis_kelamin">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(Gambar/background--.jpg);
+            background-size: cover;
+            font-family: sans-serif;
+        }
+    </style>
+    <div class="Register">
+        <h3>DAFTAR</h3>
+        <form name="myForm" onsubmit="return validateForm()" action="index.html">
+            <p><input class="form-control" type="text" id="email" name="Email" placeholder="Email"></p>
+            <p><input class="form-control" type="password" id="password" name="Password" placeholder="Password"></p>
+            <p><input class="form-control" type="text" id="namapendaftar" name="Nama" placeholder="Nama Pendaftar"></p>
+            <p><input class="form-control" type="text" id="alamat" name="alamat" placeholder="Alamat"></p>
+            <p><input class="form-control" type="text" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"></p>
+            <p><input class="form-control" type="text" id="noHp" name="noHp" placeholder="Nomor HP"></p>
+            <p><select name="jenis_kelamin">
 				<option class="radiobutton" value="Laki-Laki">Laki-Laki</option>
 				<option value="Perempuan">Perempuan</option>
 			</select></p><br>
-			<div class="tombolRegister">
-				<input type="submit" name="" value="Register">
-			</div>
-		</form>
-	</div>
-	<script src="jquery-3.4.1.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$("#toggle").click(function() {
-				$("#formRegister").validate();
-			});
-		});
-	</script>
-	<script>
-		function validateForm() {
-			var email = document.forms["myForm"]["email"].value;
-			var password = document.forms["myForm"]["password"].value;
-			var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
-			var alamat = document.forms["myForm"]["alamat"].value;
-			var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
-			var noHp = document.forms["myForm"]["noHp"].value;
-			var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
+            <div class="tombolRegister">
+                <input type="submit" name="" value="Register">
+            </div>
+        </form>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#toggle").click(function() {
+                $("#formRegister").validate();
+            });
+        });
+    </script>
+    <script>
+        function validateForm() {
+            var email = document.forms["myForm"]["email"].value;
+            var password = document.forms["myForm"]["password"].value;
+            var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
+            var alamat = document.forms["myForm"]["alamat"].value;
+            var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
+            var noHp = document.forms["myForm"]["noHp"].value;
+            var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
 
-			if (email == "") {
-				alert("Email harus diisi");
-				return false;
-			}if (password == "") {
-				alert("Password harus diisi");
-				return false;
-			}if (namapendaftar == "") {
-				alert("Nama Pendaftar harus diisi");
-				return false;
-			}if (alamat == "") {
-				alert("Alamat harus diisi");
-				return false;
-			}if (pekerjaan == "") {
-				alert("Pekerjaan harus diisi");
-				return false;
-			}if (noHp == "") {
-				alert("Nomor HP harus diisi");
-				return false;
-			}if (jenis_kelamin == "") {
-				alert("Jenis Kelamin harus diisi");
-				return false;
-			}else if(email !="" && password !="" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin !=""){
-				alert ("Selamat anda berhasil registrasi") ;
-				window.location.href = "user_panel.html";
-			}
-		}
-	</script>
+            if (email == "") {
+                alert("Email harus diisi");
+                return false;
+            }
+            if (password == "") {
+                alert("Password harus diisi");
+                return false;
+            }
+            if (namapendaftar == "") {
+                alert("Nama Pendaftar harus diisi");
+                return false;
+            }
+            if (alamat == "") {
+                alert("Alamat harus diisi");
+                return false;
+            }
+            if (pekerjaan == "") {
+                alert("Pekerjaan harus diisi");
+                return false;
+            }
+            if (noHp == "") {
+                alert("Nomor HP harus diisi");
+                return false;
+            }
+            if (jenis_kelamin == "") {
+                alert("Jenis Kelamin harus diisi");
+                return false;
+            } else if (email != "" && password != "" && namapendaftar != "" && alamat != "" && pekerjaan != "" && noHp != "" && jenis_kelamin != "") {
+                alert("Selamat anda berhasil registrasi");
+                window.location.href = "user_panel.html";
+            }
+        }
+    </script>
 </body>
+
 </html>
 <!-- onclick="location.href='awal.html'" -->
