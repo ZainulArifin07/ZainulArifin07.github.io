@@ -556,3 +556,16 @@ button a {
     font-size: 13px;
     font-weight: bold;
 }
+
+#loading {
+    background-color:   #00BFFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 5px 105px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
