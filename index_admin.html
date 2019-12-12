@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HALAMAN AWAL</title>
+    <link rel="shortcut icon" href="Gambar/icon2.png">
+    <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    <style type="text/css">
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        @media only screen and (min-width: 721px) {
+            .topnav {
+                display: none;
+            }
+        }
+        
+        @media only screen and (max-width: 720px) {
+            body {
+                margin: 0 auto;
+                max-width: 600px;
+                width: 100%;
+            }
+            div.nav {
+                display: none;
+            }
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .active {
+                background-color: #7942ee;
+                color: white;
+            }
+            .topnav .icon {
+                display: none;
+            }
+            .dropdown {
+                float: left;
+                overflow: hidden;
+            }
+            .dropdown .dropbtn {
+                font-size: 17px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+            .nav .logo {
+                float: none;
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                /*min-width: 160px;*/
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: none;
+            }
+            .topnav a:hover,
+            .dropdown:hover .dropbtn {
+                background-color: #555;
+                color: white;
+            }
+            .dropdown-content a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .Cara {
+                font-size: 20px;
+                float: none;
+            }
+            .AyoB {
+                font-size: 12px;
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            .topnav a:not(:first-child),
+            .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+            .topnav.responsive .dropdown-content {
+                position: relative;
+            }
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><img src="Gambar/1.png" class="logo" width="200px">
+                <a href="index.html"></a>
+            </li>
+            <li><a href="private class.html" class="aa">Kelas Private</a></li>
+            <li><a href="tata cara.html" class="aa">Tata Cara</a></li>
+            <li><a href="tentang.html" class="aa">Tentang</a></li>
+            <button button id="modal-btn" class="modal-button btn-default">DAFTAR</button>
+            <button button id="modal-btn2" class="modal-button btn-default">MASUK</button>
+        </ul>
+    </div>
+
+    <!-- modal -->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>DAFTAR</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form">
+                    <form name="myForm">
+                        <p><input class="form-control" type="text" id="email" name="Email" placeholder="Email"></p>
+                        <p><input class="form-control" type="password" id="password" name="Password" placeholder="Password"></p>
+                        <p><input class="form-control" type="text" id="namapendaftar" name="Nama" placeholder="Nama Pendaftar"></p>
+                        <p><input class="form-control" type="text" id="alamat" name="alamat" placeholder="Alamat"></p>
+                        <p><input class="form-control" type="text" id="pekerjaan" name="pekerjaan" placeholder="Pekerjaan"></p>
+                        <p><input class="form-control" type="text" id="noHp" name="noHp" placeholder="Nomor HP"></p>
+                        <p><select name="jenis_kelamin">
+            <option class="radiobutton" value="Laki-Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select></p><br>
+                        <div class="tombolRegister">
+                            <input onclick="validateForm()" type="submit" name="" value="Register" id="register">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="my-modal2" class="modal2">
+        <div class="modal-content2">
+            <div class="modal-header2">
+                <span class="close2">&times;</span>
+                <h2>Masuk</h2>
+            </div>
+            <div class="modal-body">
+                <div class="modal-form">
+                    <form>
+                        <p>Email</p>
+                        <input type="email" name="Email" id="email2" placeholder="Masukkan Email" style="height: 30px">
+                        <p>Password</p>
+                        <input type="password" name="Password" id="password2" placeholder="Masukkan Password" style="height: 30px">
+                        <div class="tombolLogin">
+                            <input type="submit" name="" value="LOGIN" id="login" onclick="returnValidation()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="rere">
+        <div class="content">
+            <img src="Gambar/depan.jpg" class="logo2" width="250px">
+            <br><br><br><br>
+            <div class="Cara">
+                <h1>Cara Terbaik Untuk</h1>
+                <h1>Meningkatkan Kemampuan</h1>
+                <h1>Bahasa Daerahmu</h1>
+                <hr size="10px" width="70%" color="#B0B0B0">
+            </div>
+        </div>
+        <div class="PilihBahasa">
+            <h2>Pilih Bahasa Daerah yang Ingin Kamu Pelajari</h2>
+        </div>
+        <div class="Btn-Daerah">
+            <button type="submit" class="btn-de">Madura</button>
+            <button type="submit" class="btn-de">Jawa</button>
+            <br>
+            <button type="submit" class="btn-de">Sunda</button>
+            <button type="submit" class="btn-de">Minangkabau</button>
+        </div>
+        <br><br><br><br><br><br>
+        <img src="Gambar/tengah.jpg" class="logo3" width="250px">
+        <br><br><br><br><br><br><br><br>
+        <div class="AyoB">
+            <h1>Ayo Belajar Bahasa Daerah</h1>
+            <h1>Bersama Kami</h1>
+            <button type="submit" class="AyoBel">Daftar</button>
+        </div>
+    </div><br><br>
+    <div class="footer">
+        <table class="aaa" width="50%" style="margin: 0 auto;">
+            <tr>
+                <th>
+                    <img src="Gambar/1.png" alt="cs.png" width="110px">
+                </th>
+                <th>Customer Service</th>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <p>Kosakata.id adalah aplikasi yang dapat membantu masyarakat dalam belajar Bahasa Madura, Bahasa Jawa, Bahasa Sunda, dan Bahasa Minangkabau</p>
+                </td>
+                <td>
+                    <img src="Gambar/whatsapp.png" alt="cs.png" width="20px" height="20px">
+                </td>
+                <td>081234897230</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Gambar/email.png" alt="cs.png" width="20px" height="20px">
+                </td>
+                <td>kosakata_id@gmail.com</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#toggle").click(function() {
+                $("#formRegister").validate();
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function returnValidation() {
+            var email2 = document.getElementById("email2").value;
+            var password2 = document.getElementById("password2").value;
+
+            console.log(email2);
+
+            if (email2 == "" && password2 == "") {
+                alert("Data tidak boleh kosong");
+                return false;
+            } else if (email2 != "" && password2 != "") {
+                alert("Anda berhasil masuk");
+                window.location.href = "admin_panel_upload.html";
+
+            } else {
+                alert("Data tidak boleh kosong");
+                return false;
+            }
+        }
+    </script>
+    <script>
+        function validateForm() {
+            var email = document.forms["myForm"]["email"].value;
+            var password = document.forms["myForm"]["password"].value;
+            var namapendaftar = document.forms["myForm"]["namapendaftar"].value;
+            var alamat = document.forms["myForm"]["alamat"].value;
+            var pekerjaan = document.forms["myForm"]["pekerjaan"].value;
+            var noHp = document.forms["myForm"]["noHp"].value;
+            var jenis_kelamin = document.forms["myForm"]["jenis_kelamin"].value;
+
+            if (email == "") {
+                alert("Email harus diisi");
+                return false;
+            }
+            if (password == "") {
+                alert("Password harus diisi");
+                return false;
+            }
+            if (namapendaftar == "") {
+                alert("Nama Pendaftar harus diisi");
+                return false;
+            }
+            if (alamat == "") {
+                alert("Alamat harus diisi");
+                return false;
+            }
+            if (pekerjaan == "") {
+                alert("Pekerjaan harus diisi");
+                return false;
+            }
+            if (noHp == "") {
+                alert("Nomor HP harus diisi");
+                return false;
+            }
+            if (jenis_kelamin == "") {
+                alert("Jenis Kelamin harus diisi");
+                return false;
+            } else {
+                location.replace("https://zainularifin07.github.io/dashboard_user_jadwal.html");
+                alert("");
+                console.log("berhasil");
+            }
+        }
+    </script>
+    <script>
+        const modal = document.querySelector('#my-modal');
+        const modalBtn = document.querySelector('#modal-btn');
+        const closeBtn = document.querySelector('.close');
+
+        // Events
+        modalBtn.addEventListener('click', bukaModal);
+        closeBtn.addEventListener('click', tutupModal);
+        window.addEventListener('click', luarModal);
+
+        // Open
+        function bukaModal() {
+            modal.style.display = 'block';
+        }
+        // Close
+        function tutupModal() {
+            modal.style.display = 'none';
+        }
+
+        // Close If Outside Click
+        function luarModal(e) {
+            if (e.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+    <!-- modal 2 -->
+    <script>
+        const modal2 = document.querySelector('#my-modal2');
+        const modalBtn2 = document.querySelector('#modal-btn2');
+        const closeBtn2 = document.querySelector('.close2');
+
+        // Events
+        modalBtn2.addEventListener('click', bukaModal2);
+        closeBtn2.addEventListener('click', tutupModal2);
+        window2.addEventListener('click', luarModal2);
+
+        // Open
+        function bukaModal2() {
+            modal2.style.display = 'block';
+        }
+        // Close
+        function tutupModal2() {
+            modal2.style.display = 'none';
+        }
+
+        // Close If Outside Click
+        function luarModal2(e) {
+            if (e.target == modal2) {
+                modal2.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
