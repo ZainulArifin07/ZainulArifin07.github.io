@@ -425,3 +425,28 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (min-width: 50em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .header .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    display: block;
+    float: left;
+    height: 40px;
+    padding-top: 15px;
+  }
+}
